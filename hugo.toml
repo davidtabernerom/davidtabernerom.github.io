@@ -1,3 +1,14 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+
+
+BaseURL = "https://tabernero.dev/"
+DisableKinds = ["taxonomy", "taxonomyTerm"] # removes tags/categories
+
+LanguageCode = "es-es"
+Title = "David Tabernero M. ··· Official Website"
+
+
+
+
+[params]
+Author = "Me :)"
+

@@ -3,13 +3,13 @@
 
 
 
-<html>
+<html lang="{{ .Site.LanguageCode }}">
 
 	<head>
-		<title>David Tabernero M. ··· Official Website</title>
+		<title>{{ .Site.Title }}</title>
 
 		<meta charset="utf-8">
-		<meta name="author" content="Me :)">
+		<meta name="author" content="{{ .Site.Params.Author }}">
 		<meta name="description" content="Hi, I&#39;m David, or Tabernero as everyone calls me by my surname. This is my web page slash portfolio slash… something. Come in and see whatever you like.">
 		<meta name="keywords" content="david tabernero mateo, davidtabernerom, tabernero, dtm">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
@@ -17,10 +17,12 @@
 		<link rel="icon" type="image/png" href="/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
 		<link rel="icon" type="image/png" href="/images/favicon-light.png" media="(prefers-color-scheme: light)">
 
+		<link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/css/style.css">
+		<script defer src="/js/main.js"></script>
 	</head>
 
 	<body>
-		<h1>Hi!</h1>
+		<h1>Welcome to my site!</h1>
 	</body>
 
 </html>
