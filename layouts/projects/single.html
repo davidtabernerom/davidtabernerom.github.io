@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ .Site.Title }} — {{ .Title }}</title>
+	<link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/css/style.css">
+</head>
+<body>
+	<h1>{{ .Title }} ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</h1>
+	<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="200">
+	<p>{{ .Description }}</p>
+	<p>{{ .Params.Developer }}</p>
+	<p>{{ .Params.Publisher }}</p>
+	<p><a href="/projects/">← Back to project list</a></p>
+</body>
+</html>

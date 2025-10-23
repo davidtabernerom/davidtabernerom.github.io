@@ -1,14 +1,14 @@
 
 
 BaseURL = "https://tabernero.dev/"
-DisableKinds = ["taxonomy", "taxonomyTerm"] # removes tags/categories
+DisableKinds = ["taxonomy"] # removes tags/categories
 
-LanguageCode = "es-es"
+LanguageCode = "en-us"
 Title = "David Tabernero M. ··· Official Website"
 
 
 
 
 [params]
-Author = "Me :)"
+Author = "Me :D"
 
