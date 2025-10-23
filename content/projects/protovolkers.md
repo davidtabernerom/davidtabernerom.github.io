@@ -9,4 +9,7 @@ ReleaseDate: 2030-12-31
 Developer: "Dragon Resonance"
 Publisher: "Praenaris"
 Role: "Solo developer"
+
+SteamLink: "https://store.steampowered.com/app/2944420/Protovolkers/"
+ItchioLink: "https://dragonresonance.itch.io/protovolkers"
 ---

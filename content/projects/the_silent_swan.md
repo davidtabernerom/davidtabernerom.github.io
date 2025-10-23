@@ -9,4 +9,8 @@ ReleaseDate: 2023-11-02
 Developer: "Praenaris"
 Publisher: "Gammera Nest"
 Role: "Lead Programmer & Technical Manager"
+
+PlayStationLink: "https://store.playstation.com/concept/10005130/"
+SteamLink: "https://store.steampowered.com/app/1898880/The_Silent_Swan/"
+ItchioLink: "https://praenaris.itch.io/thesilentswan"
 ---

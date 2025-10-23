@@ -9,8 +9,38 @@
 	<h1>{{ .Title }} ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</h1>
 	<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="200">
 	<p>{{ .Description }}</p>
-	<p>{{ .Params.Developer }}</p>
-	<p>{{ .Params.Publisher }}</p>
+	<p>Developed by {{ .Params.Developer }}</p>
+	<p>Published by {{ .Params.Publisher }}</p>
+	<p>Role: {{ .Params.Role }}</p>
+
+	{{ if .Params.PlayStationLink }}
+	<p>PlayStation: <a target="_blank" href="{{ .Params.PlayStationLink }}">{{ .Params.PlayStationLink }}</a></p>
+	{{ end }}
+	{{ if .Params.XboxLink }}
+	<p>Xbox: <a target="_blank" href="{{ .Params.XboxLink }}">{{ .Params.XboxLink }}</a></p>
+	{{ end }}
+	{{ if .Params.SwitchLink }}
+	<p>Switch: <a target="_blank" href="{{ .Params.SwitchLink }}">{{ .Params.SwitchLink }}</a></p>
+	{{ end }}
+	{{ if .Params.SteamLink }}
+	<p>Steam: <a target="_blank" href="{{ .Params.SteamLink }}">{{ .Params.SteamLink }}</a></p>
+	{{ end }}
+	{{ if .Params.EpicGamesLink }}
+	<p>Epic Games: <a target="_blank" href="{{ .Params.EpicGamesLink }}">{{ .Params.EpicGamesLink }}</a></p>
+	{{ end }}
+	{{ if .Params.GogLink }}
+	<p>GOG: <a target="_blank" href="{{ .Params.GogLink }}">{{ .Params.GogLink }}</a></p>
+	{{ end }}
+	{{ if .Params.GooglePlayLink }}
+	<p>Google Play: <a target="_blank" href="{{ .Params.GooglePlayLink }}">{{ .Params.GooglePlayLink }}</a></p>
+	{{ end }}
+	{{ if .Params.AppStoreLink }}
+	<p>App Store: <a target="_blank" href="{{ .Params.AppStoreLink }}">{{ .Params.AppStoreLink }}</a></p>
+	{{ end }}
+	{{ if .Params.ItchioLink }}
+	<p>itch.io: <a target="_blank" href="{{ .Params.ItchioLink }}">{{ .Params.ItchioLink }}</a></p>
+	{{ end }}
+
 	<p><a href="/projects/">← Back to project list</a></p>
 </body>
 </html>

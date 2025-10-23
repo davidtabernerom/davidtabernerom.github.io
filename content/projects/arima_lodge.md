@@ -9,4 +9,7 @@ ReleaseDate: 2024-12-10
 Developer: "Praenaris"
 Publisher: "Praenaris"
 Role: "Mechanics Developer"
+
+SteamLink: "https://store.steampowered.com/app/3310190/Arima_Lodge/"
+ItchioLink: "https://praenaris.itch.io/arima-lodge"
 ---

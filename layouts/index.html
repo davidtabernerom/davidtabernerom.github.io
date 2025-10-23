@@ -22,14 +22,14 @@
 	</head>
 
 	<body>
-		<h1>Welcome to my site!</h1>
+		<h1>Welcome to tabernero.dev!</h1>
 
 
 <h2>Latest Projects</h2>
 <ul>
 	{{ range first 3 (sort (where .Site.RegularPages "Section" "projects") "Params.ReleaseDate" "desc") }}
 	<li>
-		<h3><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</h3>
+		<h3><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h3>
 		<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
 		<p>{{ .Params.description }}</p>
 	</li>

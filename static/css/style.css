@@ -1,6 +1,14 @@
-html {
-	background-color: rgb(45, 50, 55);
+:root {
+	--general--background-color: #c3c8cd;
+	--general--text-color: rgb(45, 50, 55);
 }
+
+
+html {
+	background-color: var(--general--background-color);
+}
+
+
 h1,
 h2,
 h3,
@@ -9,5 +17,5 @@ a,
 strong,
 li,
 span {
-	color: rgb(235, 240, 245);
+	color: var(--general--text-color);
 }

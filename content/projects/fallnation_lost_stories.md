@@ -9,4 +9,6 @@ ReleaseDate: 2024-12-23
 Developer: "FivexGames"
 Publisher: "FivexGames"
 Role: "Mechanics Developer & Technical Assistant"
+
+SteamLink: "https://store.steampowered.com/app/2774800/FallNation_Lost_Stories/"
 ---
