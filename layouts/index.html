@@ -25,9 +25,9 @@
 		<h1>Welcome to tabernero.dev!</h1>
 
 
-<h2>Latest Projects</h2>
+<h2>Next Project</h2>
 <ul>
-	{{ range first 3 (sort (where .Site.RegularPages "Section" "projects") "Params.ReleaseDate" "desc") }}
+	{{ range first 1 (sort (where (where .Site.RegularPages "Params.InDevelopment" true) "Section" "projects") "Params.ReleaseDate" "asc") }}
 	<li>
 		<h3><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h3>
 		<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
@@ -35,6 +35,18 @@
 	</li>
 	{{ end }}
 </ul>
+
+<h2>Latest Releases</h2>
+<ul>
+	{{ range first 3 (sort (where (where .Site.RegularPages "Params.Released" true) "Section" "projects") "Params.ReleaseDate" "desc") }}
+	<li>
+		<h3><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h3>
+		<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
+		<p>{{ .Params.description }}</p>
+	</li>
+	{{ end }}
+</ul>
+
 <p><a href="/projects/">View all projects →</a></p>
 
 

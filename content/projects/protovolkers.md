@@ -4,12 +4,17 @@ Description: "Winding tracks at high speed with the wildest cast of characters i
 Date: 2022-06-05
 Draft: false
 
+Released: false
+InDevelopment: true
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2944420/450f575d258a8e3b6d0a610980df0b1e979620d7/library_600x900_2x.jpg"
 ReleaseDate: 2030-12-31
 Developer: "Dragon Resonance"
 Publisher: "Praenaris"
 Role: "Solo developer"
 
-SteamLink: "https://store.steampowered.com/app/2944420/Protovolkers/"
-ItchioLink: "https://dragonresonance.itch.io/protovolkers"
+Links:
+  - platform: "Steam"
+    url: "https://store.steampowered.com/app/2944420/Protovolkers/"
+  - platform: "Itchio"
+    url: "https://dragonresonance.itch.io/protovolkers"
 ---
