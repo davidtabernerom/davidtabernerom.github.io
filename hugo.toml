@@ -4,7 +4,7 @@ BaseURL = "https://tabernero.dev/"
 DisableKinds = ["taxonomy"] # removes tags/categories
 
 LanguageCode = "en-us"
-Title = "David Tabernero M. ··· Official Website"
+Title = "tabernero.dev — game developer"
 
 
 

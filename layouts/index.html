@@ -1,58 +1,27 @@
-<!doctype html>
+{{ define "main" }}
+	<main>
+		<h2>Next Project</h2>
+		<ul>
+			{{ range first 1 (sort (where (where .Site.RegularPages "Params.InDevelopment" true) "Section" "projects") "Params.ReleaseDate" "asc") }}
+			<li>
+				<h3><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h3>
+				<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
+				<p>{{ .Params.description }}</p>
+			</li>
+			{{ end }}
+		</ul>
 
+		<h2>Latest Releases</h2>
+		<ul>
+			{{ range first 3 (sort (where (where .Site.RegularPages "Params.Released" true) "Section" "projects") "Params.ReleaseDate" "desc") }}
+			<li>
+				<h3><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h3>
+				<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
+				<p>{{ .Params.description }}</p>
+			</li>
+			{{ end }}
+		</ul>
 
-
-
-<html lang="{{ .Site.LanguageCode }}">
-
-	<head>
-		<title>{{ .Site.Title }}</title>
-
-		<meta charset="utf-8">
-		<meta name="author" content="{{ .Site.Params.Author }}">
-		<meta name="description" content="Hi, I&#39;m David, or Tabernero as everyone calls me by my surname. This is my web page slash portfolio slash… something. Come in and see whatever you like.">
-		<meta name="keywords" content="david tabernero mateo, davidtabernerom, tabernero, dtm">
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
-
-		<link rel="icon" type="image/png" href="/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
-		<link rel="icon" type="image/png" href="/images/favicon-light.png" media="(prefers-color-scheme: light)">
-
-		<link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/css/style.css">
-		<script defer src="/js/main.js"></script>
-	</head>
-
-	<body>
-		<h1>Welcome to tabernero.dev!</h1>
-
-
-<h2>Next Project</h2>
-<ul>
-	{{ range first 1 (sort (where (where .Site.RegularPages "Params.InDevelopment" true) "Section" "projects") "Params.ReleaseDate" "asc") }}
-	<li>
-		<h3><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h3>
-		<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
-		<p>{{ .Params.description }}</p>
-	</li>
-	{{ end }}
-</ul>
-
-<h2>Latest Releases</h2>
-<ul>
-	{{ range first 3 (sort (where (where .Site.RegularPages "Params.Released" true) "Section" "projects") "Params.ReleaseDate" "desc") }}
-	<li>
-		<h3><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h3>
-		<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
-		<p>{{ .Params.description }}</p>
-	</li>
-	{{ end }}
-</ul>
-
-<p><a href="/projects/">View all projects →</a></p>
-
-
-	</body>
-
-</html>
-
-
-
+		<p><a href="/projects/">View all projects →</a></p>
+	</main>
+{{ end }}
