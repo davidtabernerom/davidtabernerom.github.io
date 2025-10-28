@@ -1,0 +1,31 @@
+:root {
+	--general--background-color: #c3c8cd;
+	--general--foreground-color: #f0f0f0;
+	--general--accent-color: #d73250;
+	--general--text-color: #2d3237;
+}
+
+
+
+
+* {
+	box-sizing: border-box;
+	color: var(--general--text-color);
+	font-family: "Inter";
+	font-optical-sizing: auto;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+html {
+	background-color: var(--general--background-color);
+}
+
+
+body {
+	/**/
+}
