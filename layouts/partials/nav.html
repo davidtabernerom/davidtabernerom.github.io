@@ -1,8 +1,17 @@
 <nav>
-	<div id="Logo">tab<br>ern<br>ero<br>.dev</div>
+	<div id="Logo">
+		<a href="{{ .Site.BaseURL }}">tab<br>ern<br>ero<br>.dev</a>
+	</div>
+
 	<ul>
 		{{ range .Site.Menus.main }}
-		<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+		<li>
+			<a href="{{ .URL }}">{{ .Name }}</a>
+		</li>
 		{{ end }}
 	</ul>
+
+	<div id="CV">
+		<a href="/files/curriculum_vitae.pdf">CV</a>
+	</div>
 </nav>

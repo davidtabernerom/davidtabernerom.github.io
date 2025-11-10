@@ -3,10 +3,56 @@ nav {
 	flex: 0 0 var(--navigation--sidebar--width);
 }
 
+				nav > div#Logo {
+					/*border: 3px dashed greenyellow;*/
+					align-items: center;
+					display: flex;
+					height: var(--navigation--topbar--height);
+					justify-content: center;
+					width: 100%;
+				}
 
+								nav > div#Logo > a {
+									/*border: 3px dashed lightgoldenrodyellow;*/
+									color: var(--general--foreground-color);
+									font-family: "Archivo";
+									font-size: 48px;
+									font-variation-settings: "wdth" 125;
+									font-weight: 900;
+									letter-spacing: -0.05ch;
+									line-height: 0.6em;
+									text-align: left;
+									text-decoration: none;
+								}
 
-header > ul#Breadcrumbs > li#Logo > a {
-	font-size: 32px;
-	font-variation-settings: "wdth" 125;
-	font-weight: 900;
-}
+								/*nav > div#Logo > a {
+									border: 3px dashed lightgoldenrodyellow;
+									color: var(--general--foreground-color);
+									font-family: "JetBrains Mono";
+									font-size: 64px;
+									font-weight: 800;
+									letter-spacing: -0.2ch;
+									line-height: 0.6em;
+									text-align: left;
+									text-decoration: none;
+								}*/
+
+				nav > ul {
+					border: 3px dashed greenyellow;
+				}
+
+								nav > ul > li {
+									/*border: 3px dashed lightgoldenrodyellow;*/
+								}
+
+												nav > ul > li > a {
+													/*border: 3px dashed lightsalmon;*/
+												}
+
+				nav > div#CV {
+					border: 3px dashed greenyellow;
+				}
+
+								nav > div#CV > a {
+									/*border: 3px dashed lightgoldenrodyellow;*/
+								}
