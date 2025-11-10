@@ -1,6 +1,8 @@
 nav {
 	background-color: var(--general--accent-color);
 	flex: 0 0 var(--navigation--sidebar--width);
+	position: relative;
+	text-align: center;
 }
 
 				nav > div#Logo {
@@ -14,31 +16,32 @@ nav {
 
 								nav > div#Logo > a {
 									/*border: 3px dashed lightgoldenrodyellow;*/
-									color: var(--general--foreground-color);
-									font-family: "Archivo";
-									font-size: 48px;
-									font-variation-settings: "wdth" 125;
-									font-weight: 900;
-									letter-spacing: -0.05ch;
-									line-height: 0.6em;
-									text-align: left;
+									text-align: right;
 									text-decoration: none;
 								}
 
-								/*nav > div#Logo > a {
-									border: 3px dashed lightgoldenrodyellow;
-									color: var(--general--foreground-color);
-									font-family: "JetBrains Mono";
-									font-size: 64px;
-									font-weight: 800;
-									letter-spacing: -0.2ch;
-									line-height: 0.6em;
-									text-align: left;
-									text-decoration: none;
-								}*/
+												nav > div#Logo > a > span {
+													/*border: 3px dashed cornflowerblue;*/
+													color: var(--general--foreground-color);
+													font-family: "Archivo";
+													font-size: 48px;
+													font-variation-settings: "wdth" 125;
+													font-weight: 900;
+													letter-spacing: -0.05ch;
+													line-height: 0.6em;
+													vertical-align: middle;
+												}
+
+														nav > div#Logo > a > span:last-of-type {
+															font-weight: 580;
+															margin-left: -0.5ch;
+														}
 
 				nav > ul {
-					border: 3px dashed greenyellow;
+					/*border: 3px dashed greenyellow;*/
+					display: inline-block;
+					margin-top: 24px;
+					text-align: left;
 				}
 
 								nav > ul > li {
@@ -47,12 +50,41 @@ nav {
 
 												nav > ul > li > a {
 													/*border: 3px dashed lightsalmon;*/
+													color: var(--general--foreground-color);
+													font-family: "JetBrains Mono";
+													font-size: 28px;
+													font-weight: 500;
+													padding-left: 8px;
+													padding-right: 8px;
+													text-decoration: none;
+													text-transform: uppercase;
 												}
 
+													nav > ul > li > a:hover {
+														background-color: var(--general--foreground-color);
+														color: var(--general--accent-color);
+													}
+
 				nav > div#CV {
-					border: 3px dashed greenyellow;
+					/*border: 3px dashed greenyellow;*/
+					bottom: 20px;
+					left: 0;
+					margin-left: auto;
+					margin-right: auto;
+					position: absolute;
+					right: 0;
 				}
 
 								nav > div#CV > a {
 									/*border: 3px dashed lightgoldenrodyellow;*/
+									color: var(--general--foreground-color);
+									display: inline-block;
+									font-size: 16px;
+									padding: 4px 8px;
+									text-decoration: none;
 								}
+
+									nav > div#CV > a:hover {
+										background-color: var(--general--foreground-color);
+										color: var(--general--accent-color);
+									}
