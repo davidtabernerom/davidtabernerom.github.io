@@ -1,8 +1,9 @@
 :root {
-	--general--accent-color: #d73250;
-	--general--background-color: #c3c8cd;
-	--general--foreground-color: #f0f0f0;
-	--general--text-color: #2d3237;
+	--general--accent-color: rgb(215, 50, 80);
+	--general--background-color: rgb(195, 200, 205);
+	--general--contrast-color: rgb(165, 30, 55);
+	--general--foreground-color: rgb(240, 240, 240);
+	--general--text-color: rgb(45, 50, 55);
 	--navigation--sidebar--width: 200px;
 	--navigation--topbar--height: 200px;
 }

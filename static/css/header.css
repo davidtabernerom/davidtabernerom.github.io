@@ -15,9 +15,13 @@ header {
 									display: inline-block;
 								}
 
+										header > ul#Breadcrumbs > li.Separator {
+											opacity: 0.25;
+											padding: 0 2px;
+										}
+
 												header > ul#Breadcrumbs > li > a {
 													border-radius: 8px;
-													font-family: "Archivo";
 													padding: 4px 8px;
 													text-decoration: none;
 												}
@@ -25,22 +29,9 @@ header {
 														background-color: var(--general--background-color);
 													}
 
-										header > ul#Breadcrumbs > li#Logo {
-											/**/
-										}
-
-														header > ul#Breadcrumbs > li#Logo > a {
-															font-size: 32px;
-															font-variation-settings: "wdth" 125;
-															font-weight: 900;
-														}
-
-										header > ul#Breadcrumbs > li.Separator {
-											padding: 0 2px;
-										}
-
 														header > ul#Breadcrumbs > li.Separator,
 														header > ul#Breadcrumbs > li.Breadcrumb > a {
+															font-family: "Archivo";
 															font-size: 28px;
 															font-variation-settings: "wdth" 100;
 															font-weight: 100;
@@ -48,6 +39,6 @@ header {
 														}
 
 														header > ul#Breadcrumbs > li.Breadcrumb:last-of-type > a {
-															font-weight: 450;
+															font-weight: 600;
 														}
 

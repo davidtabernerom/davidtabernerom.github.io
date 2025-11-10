@@ -3,3 +3,10 @@ nav {
 	flex: 0 0 var(--navigation--sidebar--width);
 }
 
+
+
+header > ul#Breadcrumbs > li#Logo > a {
+	font-size: 32px;
+	font-variation-settings: "wdth" 125;
+	font-weight: 900;
+}

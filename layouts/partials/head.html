@@ -3,8 +3,14 @@
 	<title>{{ .Site.Title }}</title>
 
 	<meta charset="utf-8">
-	<meta name="author" content="{{ .Site.Params.Author }}">
-	<meta name="description" content="Hi, I&#39;m David, or Tabernero as everyone calls me by my surname. This is my web page slash portfolio slash… something. Come in and see whatever you like.">
+
+	{{ if .Site.Params.Author }}
+		<meta name="author" content="{{ .Site.Params.Author }}">
+	{{ end }}
+	{{ if .Params.description }}
+		<meta name="description" content="{{ .Params.Description }}">
+	{{ end }}
+
 	<meta name="keywords" content="david tabernero mateo, davidtabernerom, tabernero, dtm">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
 
@@ -24,6 +30,7 @@
 	<link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/css/header.css">
 	<link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/css/article.css">
 	<link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/css/footer.css">
+
 	<script defer src="/js/main.js"></script>
 
 </head>
