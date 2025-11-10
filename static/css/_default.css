@@ -4,8 +4,9 @@
 	--general--contrast-color: rgb(165, 30, 55);
 	--general--foreground-color: rgb(240, 240, 240);
 	--general--text-color: rgb(45, 50, 55);
+	--general--border-radius: 4px;
 	--navigation--sidebar--width: 200px;
-	--navigation--topbar--height: 160px;
+	--navigation--topbar--height: 64px;
 }
 
 

@@ -1,7 +1,10 @@
 header {
 	background-color: var(--general--foreground-color);
-	height: 80px;
-	width: 100%;
+	height: var(--navigation--topbar--height);
+	left: var(--navigation--sidebar--width);
+	position: fixed;
+	right: 0;
+	top: 0;
 }
 
 				header > ul#Breadcrumbs {
@@ -21,7 +24,7 @@ header {
 										}
 
 												header > ul#Breadcrumbs > li > a {
-													border-radius: 8px;
+													border-radius: var(--general--border-radius);
 													padding: 4px 8px;
 													text-decoration: none;
 												}

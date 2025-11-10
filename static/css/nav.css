@@ -1,15 +1,16 @@
 nav {
 	background-color: var(--general--accent-color);
-	flex: 0 0 var(--navigation--sidebar--width);
-	position: relative;
+	height: 100%;
+	position: fixed;
 	text-align: center;
+	width: var(--navigation--sidebar--width);
 }
 
 				nav > div#Logo {
 					/*border: 3px dashed greenyellow;*/
 					align-items: center;
 					display: flex;
-					height: var(--navigation--topbar--height);
+					height: var(--navigation--sidebar--width);
 					justify-content: center;
 					width: 100%;
 				}
@@ -40,7 +41,7 @@ nav {
 				nav > ul {
 					/*border: 3px dashed greenyellow;*/
 					display: inline-block;
-					margin-top: 24px;
+					margin-top: 4px;
 					text-align: left;
 				}
 
@@ -50,6 +51,7 @@ nav {
 
 												nav > ul > li > a {
 													/*border: 3px dashed lightsalmon;*/
+													border-radius: var(--general--border-radius);
 													color: var(--general--foreground-color);
 													font-family: "JetBrains Mono";
 													font-size: 28px;
@@ -77,6 +79,7 @@ nav {
 
 								nav > div#CV > a {
 									/*border: 3px dashed lightgoldenrodyellow;*/
+									border-radius: var(--general--border-radius);
 									color: var(--general--foreground-color);
 									display: inline-block;
 									font-size: 16px;
