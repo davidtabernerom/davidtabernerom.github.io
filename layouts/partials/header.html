@@ -1,2 +1,18 @@
 <header>
+	<ul id="Breadcrumbs">
+	<li id="Logo"><a href="{{ .Site.BaseURL }}">root</a></li>
+
+	{{ if .Section }}
+		<li class="Separator">/</li>
+		<li class="Breadcrumb">
+			<a href="{{ .Site.BaseURL }}{{ .Section }}/">{{ .Section }}</a>
+		</li>
+	{{ end }}
+	{{ if .IsPage }}
+		<li class="Separator">/</li>
+		<li class="Breadcrumb">
+			<a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Title }}">{{ .Title }}</a>
+		</li>
+	{{ end }}
+</ul>
 </header>

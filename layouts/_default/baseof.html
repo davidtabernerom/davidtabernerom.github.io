@@ -9,11 +9,15 @@
 
 		{{ partial "nav.html" . }}
 
-		{{ partial "header.html" . }}
+		<main>
 
-		{{ block "main" . }}{{ end }}
+			{{ partial "header.html" . }}
 
-		{{ partial "footer.html" . }}
+			{{ block "article" . }}{{ end }}
+
+			{{ partial "footer.html" . }}
+
+		</main>
 
 	</body>
 

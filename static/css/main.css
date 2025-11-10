@@ -1,0 +1,5 @@
+main {
+	background-color: var(--general--background-color);
+	flex: 1 1 auto;
+}
+

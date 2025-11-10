@@ -1,0 +1,53 @@
+header {
+	background-color: var(--general--foreground-color);
+	height: 80px;
+	width: 100%;
+}
+
+				header > ul#Breadcrumbs {
+					align-items: center;
+					display: flex;
+					height: 100%;
+					justify-content: center;
+				}
+
+								header > ul#Breadcrumbs > li {
+									display: inline-block;
+								}
+
+												header > ul#Breadcrumbs > li > a {
+													border-radius: 8px;
+													font-family: "Archivo";
+													padding: 4px 8px;
+													text-decoration: none;
+												}
+													header > ul#Breadcrumbs > li > a:hover {
+														background-color: var(--general--background-color);
+													}
+
+										header > ul#Breadcrumbs > li#Logo {
+											/**/
+										}
+
+														header > ul#Breadcrumbs > li#Logo > a {
+															font-size: 32px;
+															font-variation-settings: "wdth" 125;
+															font-weight: 900;
+														}
+
+										header > ul#Breadcrumbs > li.Separator {
+											padding: 0 2px;
+										}
+
+														header > ul#Breadcrumbs > li.Separator,
+														header > ul#Breadcrumbs > li.Breadcrumb > a {
+															font-size: 28px;
+															font-variation-settings: "wdth" 100;
+															font-weight: 100;
+															text-transform: lowercase;
+														}
+
+														header > ul#Breadcrumbs > li.Breadcrumb:last-of-type > a {
+															font-weight: 450;
+														}
+

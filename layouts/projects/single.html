@@ -1,5 +1,5 @@
-{{ define "main" }}
-	<main>
+{{ define "article" }}
+	<article>
 		<h1>{{ .Title }} ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</h1>
 		<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="200">
 		<p>{{ .Description }}</p>
@@ -26,5 +26,5 @@
 		<hr>
 
 		<p><a href="/projects/">← Back to project list</a></p>
-	</main>
+	</article>
 {{ end }}

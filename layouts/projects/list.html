@@ -1,5 +1,5 @@
-{{ define "main" }}
-	<main>
+{{ define "article" }}
+	<article>
 		<h2>Upcoming Projects</h2>
 		<ul>
 			{{ range (sort (where .Pages "Params.InDevelopment" true) "Params.ReleaseDate" "asc") }}
@@ -23,5 +23,5 @@
 		</ul>
 
 		<p><a href="/">← Back to Home</a></p>
-	</main>
+	</article>
 {{ end }}

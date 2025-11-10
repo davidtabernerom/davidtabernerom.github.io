@@ -1,53 +1,5 @@
 nav {
-	background-color: var(--general--foreground-color);
-	height: 80px;
-	width: 100%;
+	background-color: var(--general--accent-color);
+	flex: 0 0 var(--navigation--sidebar--width);
 }
-
-				nav > ul#Breadcrumbs {
-					align-items: center;
-					display: flex;
-					height: 100%;
-					justify-content: center;
-				}
-
-								nav > ul#Breadcrumbs > li {
-									display: inline-block;
-								}
-
-												nav > ul#Breadcrumbs > li > a {
-													border-radius: 8px;
-													font-family: "Archivo";
-													padding: 4px 8px;
-													text-decoration: none;
-												}
-													nav > ul#Breadcrumbs > li > a:hover {
-														background-color: var(--general--background-color);
-													}
-
-										nav > ul#Breadcrumbs > li#Logo {
-											/**/
-										}
-
-														nav > ul#Breadcrumbs > li#Logo > a {
-															font-size: 32px;
-															font-variation-settings: "wdth" 125;
-															font-weight: 900;
-														}
-
-										nav > ul#Breadcrumbs > li.Separator {
-											padding: 0 2px;
-										}
-
-														nav > ul#Breadcrumbs > li.Separator,
-														nav > ul#Breadcrumbs > li.Breadcrumb > a {
-															font-size: 28px;
-															font-variation-settings: "wdth" 100;
-															font-weight: 100;
-															text-transform: lowercase;
-														}
-
-														nav > ul#Breadcrumbs > li.Breadcrumb:last-of-type > a {
-															font-weight: 450;
-														}
 

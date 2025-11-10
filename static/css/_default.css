@@ -1,8 +1,17 @@
 :root {
+	--general--accent-color: #d73250;
 	--general--background-color: #c3c8cd;
 	--general--foreground-color: #f0f0f0;
-	--general--accent-color: #d73250;
 	--general--text-color: #2d3237;
+	--navigation--sidebar--width: 200px;
+	--navigation--topbar--height: 200px;
+}
+
+
+
+
+html {
+	background-color: var(--general--text-color);
 }
 
 
@@ -19,13 +28,7 @@
 }
 
 
-
-
-html {
-	background-color: var(--general--background-color);
+ul {
+	list-style: none;
 }
 
-
-body {
-	/**/
-}
