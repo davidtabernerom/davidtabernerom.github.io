@@ -47,6 +47,7 @@ nav {
 
 								nav > ul > li {
 									/*border: 3px dashed lightgoldenrodyellow;*/
+									margin-bottom: 4px;
 								}
 
 												nav > ul > li > a {
