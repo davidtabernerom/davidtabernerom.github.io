@@ -1,5 +1,5 @@
 {{ define "article" }}
-	<article>
+	<article id="Projects">
 		<h2>Upcoming Projects</h2>
 		<ul>
 			{{ range (sort (where .Pages "Params.InDevelopment" true) "Params.ReleaseDate" "asc") }}
