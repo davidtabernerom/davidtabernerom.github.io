@@ -9,40 +9,48 @@ header {
 }
 
 				header > ul#Breadcrumbs {
-					align-items: center;
+					align-items: end;
 					display: flex;
 					height: 100%;
 					justify-content: center;
+					padding-bottom: 24px;
 				}
 
 								header > ul#Breadcrumbs > li {
 									display: inline-block;
+									line-height: 100%;
 								}
 
 										header > ul#Breadcrumbs > li.Separator {
-											opacity: 0.25;
-											padding: 0 2px;
+											font-size: 32px;
+											opacity: 0.2;
 										}
 
 												header > ul#Breadcrumbs > li > a {
+													border-color: transparent;
 													border-radius: var(--general--border-radius);
-													padding: 4px 8px;
+													border-style: solid;
+													border-width: 2px;
+													font-size: 40px;
+													opacity: 0.4;
+													padding: 0 12px;
 													text-decoration: none;
 												}
+
 													header > ul#Breadcrumbs > li > a:hover {
-														background-color: var(--general--background-color);
+														border-color: var(--general--accent-color);
 													}
 
 														header > ul#Breadcrumbs > li.Separator,
 														header > ul#Breadcrumbs > li.Breadcrumb > a {
-															font-family: "Archivo";
-															font-size: 28px;
-															font-variation-settings: "wdth" 100;
+															font-family: "JetBrains Mono";
 															font-weight: 100;
-															text-transform: lowercase;
+															text-transform: uppercase;
 														}
 
 														header > ul#Breadcrumbs > li.Breadcrumb:last-of-type > a {
+															font-size: 48px;
 															font-weight: 600;
+															opacity: 1;
 														}
 
