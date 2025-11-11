@@ -1,10 +1,10 @@
 main {
 	/*border: 3px dashed blue;*/
 	background-color: var(--general--background-color);
-	box-shadow: inset 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-	margin-bottom: var(--copyright--bar--height);
+	box-shadow: inset var(--main--box-shadow);
 	margin-left: var(--navigation--sidebar--width);
-	margin-top: var(--navigation--topbar--height);
+	padding-bottom: var(--copyright--bar--height);
+	padding-top: var(--navigation--topbar--height);
 	width: 100%;
 }
 

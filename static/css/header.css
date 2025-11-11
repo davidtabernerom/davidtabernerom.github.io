@@ -1,5 +1,6 @@
 header {
 	background-color: var(--general--foreground-color);
+	box-shadow: var(--main--box-shadow);
 	height: var(--navigation--topbar--height);
 	left: var(--navigation--sidebar--width);
 	position: fixed;

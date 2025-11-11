@@ -1,6 +1,7 @@
 footer {
 	align-items: center;
 	background-color: var(--general--foreground-color);
+	box-shadow: var(--main--box-shadow);
 	display: flex;
 	justify-content: center;
 	width: 100%;
