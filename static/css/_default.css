@@ -4,7 +4,10 @@
 	--general--border-radius: 4px;
 	--general--contrast-color: rgb(155, 30, 50);
 	--general--foreground-color: rgb(240, 240, 240);
-	--general--text-color: rgb(45, 50, 55);
+	--general--text--color: rgb(45, 50, 55);
+
+	--content--max-width: 1000px;
+	--content--side-margin: 120px;
 
 	--main--box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
 	--navigation--sidebar--width: 200px;
@@ -15,7 +18,7 @@
 
 
 html {
-	background-color: var(--general--text-color);
+	background-color: var(--general--text--color);
 }
 
 
@@ -23,7 +26,7 @@ html {
 
 * {
 	box-sizing: border-box;
-	color: var(--general--text-color);
+	color: var(--general--text--color);
 	font-family: "Inter";
 	font-optical-sizing: auto;
 	font-style: normal;

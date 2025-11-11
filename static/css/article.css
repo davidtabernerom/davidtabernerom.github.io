@@ -1,4 +1,8 @@
 article {
-	/**/
+	margin-left: var(--content--side-margin);
+	max-width: var(--content--max-width);
+	padding-bottom: 80px;
+	padding-top: 40px;
+	width: calc(100% - (2 * var(--content--side-margin)));
 }
 
