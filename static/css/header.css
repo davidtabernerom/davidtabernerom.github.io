@@ -21,36 +21,37 @@ header {
 									line-height: 100%;
 								}
 
-										header > ul#Breadcrumbs > li.Separator {
-											font-size: 32px;
-											opacity: 0.2;
-										}
+												header > ul#Breadcrumbs > li.Separator,
+												header > ul#Breadcrumbs > li.Breadcrumb > a {
+													font-family: "JetBrains Mono";
+													font-weight: 100;
+													text-transform: uppercase;
+												}
 
-												header > ul#Breadcrumbs > li > a {
+												header > ul#Breadcrumbs > li.Separator {
+													font-size: 28px;
+													opacity: 0.2;
+												}
+
+												header > ul#Breadcrumbs > li.Breadcrumb > a {
 													border-color: transparent;
 													border-radius: var(--general--border-radius);
 													border-style: solid;
 													border-width: 2px;
-													font-size: 40px;
+													font-size: 32px;
 													opacity: 0.4;
-													padding: 0 12px;
+													padding: 0 8px;
 													text-decoration: none;
 												}
 
-													header > ul#Breadcrumbs > li > a:hover {
+													header > ul#Breadcrumbs > li.Breadcrumb > a:hover {
 														border-color: var(--general--accent-color);
 													}
 
-														header > ul#Breadcrumbs > li.Separator,
-														header > ul#Breadcrumbs > li.Breadcrumb > a {
-															font-family: "JetBrains Mono";
-															font-weight: 100;
-															text-transform: uppercase;
-														}
-
-														header > ul#Breadcrumbs > li.Breadcrumb:last-of-type > a {
-															font-size: 48px;
-															font-weight: 600;
-															opacity: 1;
-														}
+												header > ul#Breadcrumbs > li.Breadcrumb:last-of-type > a {
+													font-size: 48px;
+													font-weight: 600;
+													opacity: 1;
+													padding: 0 12px;
+												}
 
