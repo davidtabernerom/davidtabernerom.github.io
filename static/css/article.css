@@ -1,9 +1,9 @@
 article {
 	margin-left: var(--content--side-margin);
 	max-width: var(--content--max-width);
-	padding-bottom: 80px;
-	padding-top: 40px;
+	min-height: calc(100vh - var(--navigation--topbar--height)); /* - var(--copyright--var--height) */
+	padding-bottom: 96px;
+	padding-top: 64px;
 	width: calc(100% - (2 * var(--content--side-margin)));
-	min-height: calc(100vh - var(--navigation--topbar--height) - var(--copyright--var--height));
 }
 

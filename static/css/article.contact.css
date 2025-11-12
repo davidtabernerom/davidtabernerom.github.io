@@ -5,7 +5,7 @@ article#Contact {
 				article#Contact > ul {
 					display: flex;
 					flex-wrap: wrap;
-					gap: 16px;
+					gap: 20px;
 					justify-content: center;
 				}
 
@@ -13,7 +13,7 @@ article#Contact {
 									/*border: 3px dashed coral;*/
 									box-shadow: var(--main--box-shadow);
 									height: 80px;
-									width: 400px;
+									width: 440px;
 								}
 
 												article#Contact > ul > li > a {
@@ -33,12 +33,6 @@ article#Contact {
 														background-color: var(--general--accent-color);
 													}
 
-																article#Contact > ul > li > a > div,
-																article#Contact > ul > li > a > span {
-																	/*border: 3px dashed green;*/
-																	vertical-align: middle;
-																}
-
 																article#Contact > ul > li > a > div {
 																	aspect-ratio: 1;
 																	background-color: var(--general--contrast-color);
@@ -56,7 +50,7 @@ article#Contact {
 
 																article#Contact > ul > li > a > span {
 																	font-family: "Archivo";
-																	font-size: 24px;
+																	font-size: 28px;
 																	font-variation-settings: "wdth" 65;
 																	line-height: 100%;
 																}
