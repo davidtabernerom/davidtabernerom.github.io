@@ -5,8 +5,8 @@
 	{{ range site.Data.socials }}
 		<li>
 			<a target="_blank" href="{{ .link }}">
-				<div style="mask-image: url('{{ .image }}');"></div>
 				<!--<img src="{{ .image }}" alt="{{ .id }}" />-->
+				<div style="mask-image: url('{{ .image }}');"></div>
 				<span>{{ .label }}</span>
 			</a>
 		</li>

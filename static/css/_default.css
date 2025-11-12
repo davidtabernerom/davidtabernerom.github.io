@@ -1,7 +1,7 @@
 :root {
 	--general--accent-color: rgb(215, 50, 80);
 	--general--background-color: rgb(195, 200, 205);
-	--general--border-radius: 4px;
+	--general--border-radius: 8px;
 	--general--contrast-color: rgb(155, 30, 50);
 	--general--foreground-color: rgb(240, 240, 240);
 	--general--text--color: rgb(45, 50, 55);

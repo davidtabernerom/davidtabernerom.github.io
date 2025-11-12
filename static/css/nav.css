@@ -52,7 +52,7 @@ nav {
 
 												nav > ul > li > a {
 													/*border: 3px dashed lightsalmon;*/
-													border-radius: var(--general--border-radius);
+													/*border-radius: var(--general--border-radius);*/
 													color: var(--general--foreground-color);
 													font-family: "JetBrains Mono";
 													font-size: 28px;
