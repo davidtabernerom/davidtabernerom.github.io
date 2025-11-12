@@ -13,6 +13,6 @@ Publisher: "FivexGames"
 Role: "Mechanics Developer & Technical Assistant"
 
 Links:
-  - platform: "Steam"
+  - store: "Steam"
     url: "https://store.steampowered.com/app/2774800/FallNation_Lost_Stories/"
 ---

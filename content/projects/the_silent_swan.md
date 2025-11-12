@@ -13,10 +13,10 @@ Publisher: "Gammera Nest"
 Role: "Lead Programmer & Technical Manager"
 
 Links:
-  - platform: "PlayStation"
+  - store: "PlayStation"
     url: "https://store.playstation.com/concept/10005130/"
-  - platform: "Steam"
+  - store: "Steam"
     url: "https://store.steampowered.com/app/1898880/The_Silent_Swan/"
-  - platform: "Itchio"
+  - store: "Itchio"
     url: "https://praenaris.itch.io/thesilentswan"
 ---

@@ -1,5 +1,16 @@
 {{ define "article" }}
-	<article id="Contact">
-		<h2>Contact</h2>
-	</article>
+<article id="Contact">
+
+	<ul>
+	{{ range site.Data.socials }}
+		<li>
+			<a target="_blank" href="{{ .link }}">
+				<img src="{{ .image }}" alt="{{ .id }}" />
+				<span>{{ .label }}</span>
+			</a>
+		</li>
+	{{ end }}
+	</ul>
+
+</article>
 {{ end }}

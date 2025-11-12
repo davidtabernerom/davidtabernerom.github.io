@@ -1,27 +1,29 @@
 {{ define "article" }}
-	<article id="Projects">
-		<h2>Upcoming Projects</h2>
-		<ul>
-			{{ range (sort (where .Pages "Params.InDevelopment" true) "Params.ReleaseDate" "asc") }}
-			<li>
-				<h2><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h2>
-				<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
-				<p>{{ .Params.description }}</p>
-			</li>
-			{{ end }}
-		</ul>
+<article id="Projects">
 
-		<h2>Released Projects</h2>
-		<ul>
-			{{ range (sort (where .Pages "Params.Released" true) "Params.ReleaseDate" "desc") }}
-			<li>
-				<h2><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h2>
-				<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
-				<p>{{ .Params.description }}</p>
-			</li>
-			{{ end }}
-		</ul>
+	<h2>Upcoming Projects</h2>
+	<ul>
+		{{ range (sort (where .Pages "Params.InDevelopment" true) "Params.ReleaseDate" "asc") }}
+		<li>
+			<h2><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h2>
+			<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
+			<p>{{ .Params.description }}</p>
+		</li>
+		{{ end }}
+	</ul>
 
-		<p><a href="/">← Back to Home</a></p>
-	</article>
+	<h2>Released Projects</h2>
+	<ul>
+		{{ range (sort (where .Pages "Params.Released" true) "Params.ReleaseDate" "desc") }}
+		<li>
+			<h2><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h2>
+			<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
+			<p>{{ .Params.description }}</p>
+		</li>
+		{{ end }}
+	</ul>
+
+	<p><a href="/">← Back to Home</a></p>
+
+</article>
 {{ end }}

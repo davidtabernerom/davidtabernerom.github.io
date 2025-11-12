@@ -1,30 +1,32 @@
 {{ define "article" }}
-	<article>
-		<h1>{{ .Title }} ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</h1>
-		<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="200">
-		<p>{{ .Description }}</p>
-		<p>Developed by {{ .Params.Developer }}</p>
-		<p>Published by {{ .Params.Publisher }}</p>
-		<p>Role: {{ .Params.Role }}</p>
+<article>
 
-		<hr>
+	<h1>{{ .Title }} ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</h1>
+	<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="200">
+	<p>{{ .Description }}</p>
+	<p>Developed by {{ .Params.Developer }}</p>
+	<p>Published by {{ .Params.Publisher }}</p>
+	<p>Role: {{ .Params.Role }}</p>
 
-		{{ with .Params.Links }}
-		<section class="platform-links">
-			<h3>Available on:</h3>
-			<ul>
-			{{ range . }}
-				{{ $platform := index site.Data.platforms .platform }}
-				<li>
-					<p><a target="_blank" href="{{ .url }}">{{ $platform.name }}</a></p>
-				</li>
-			{{ end }}
-			</ul>
-		</section>
+	<hr>
+
+	{{ with .Params.Links }}
+	<section class="store-links">
+		<h3>Available on:</h3>
+		<ul>
+		{{ range . }}
+			{{ $store := index site.Data.stores .store }}
+			<li>
+				<p><a target="_blank" href="{{ .url }}">{{ $store.name }}</a></p>
+			</li>
 		{{ end }}
+		</ul>
+	</section>
+	{{ end }}
 
-		<hr>
+	<hr>
 
-		<p><a href="/projects/">← Back to project list</a></p>
-	</article>
+	<p><a href="/projects/">← Back to project list</a></p>
+
+</article>
 {{ end }}

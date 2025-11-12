@@ -13,8 +13,8 @@ Publisher: "Praenaris"
 Role: "Mechanics Developer"
 
 Links:
-  - platform: "Steam"
+  - store: "Steam"
     url: "https://store.steampowered.com/app/3310190/Arima_Lodge/"
-  - platform: "Itchio"
+  - store: "Itchio"
     url: "https://praenaris.itch.io/arima-lodge"
 ---

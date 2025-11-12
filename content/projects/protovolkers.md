@@ -13,8 +13,8 @@ Publisher: "Praenaris"
 Role: "Solo developer"
 
 Links:
-  - platform: "Steam"
+  - store: "Steam"
     url: "https://store.steampowered.com/app/2944420/Protovolkers/"
-  - platform: "Itchio"
+  - store: "Itchio"
     url: "https://dragonresonance.itch.io/protovolkers"
 ---

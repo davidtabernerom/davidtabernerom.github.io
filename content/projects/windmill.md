@@ -13,6 +13,6 @@ Publisher: "Praenaris"
 Role: "Lead Programmer & Technical Manager"
 
 Links:
-  - platform: "Itchio"
+  - store: "Itchio"
     url: "https://praenaris.itch.io/windmill"
 ---

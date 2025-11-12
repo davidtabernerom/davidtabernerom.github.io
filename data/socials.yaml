@@ -1,0 +1,34 @@
+- id: X
+  label: "@davidtabernerom"
+  image: "/img/socials/x.svg"
+  link: "https://x.com/davidtabernerom"
+
+- id: Bluesky
+  label: "@davidtabernerom.bsky.social"
+  image: "/img/socials/bluesky.svg"
+  link: "https://bsky.app/profile/tabernero.dev"
+
+- id: Mastodon
+  label: "@davidtabernerom@mastodon.online"
+  image: "/img/socials/mastodon.svg"
+  link: "https://mastodon.online/@davidtabernerom"
+
+- id: Discord
+  label: "dtabernero"
+  image: "/img/socials/discord.svg"
+  link: "https://discordapp.com/users/365566749552410644"
+
+- id: GitHub
+  label: "davidtabernerom"
+  image: "/img/socials/github.svg"
+  link: "https://github.com/davidtabernerom"
+
+- id: GitLab
+  label: "@davidtabernerom"
+  image: "/img/socials/gitlab.svg"
+  link: "https://gitlab.com/davidtabernerom"
+
+- id: LinkedIn
+  label: "/in/davidtabernerom"
+  image: "/img/socials/linkedin.svg"
+  link: "https://www.linkedin.com/in/davidtabernerom/"

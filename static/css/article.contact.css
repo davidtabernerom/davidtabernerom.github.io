@@ -1,4 +1,28 @@
 article#Contact {
-	/*border: 3px dashed blue;*/
+	border: 3px dashed blue;
 }
+
+				article#Contact > ul {
+					/**/
+				}
+
+								article#Contact > ul > li {
+									/**/
+								}
+
+												article#Contact > ul > li > a {
+													text-decoration: none;
+												}
+
+																article#Contact > ul > li > a > img {
+																	height: auto;
+																	vertical-align: middle;
+																	width: 64px;
+																}
+
+																article#Contact > ul > li > a > span {
+																	font-family: "Archivo";
+																	font-size: 32px;
+																	vertical-align: middle;
+																}
 
