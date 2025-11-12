@@ -1,28 +1,67 @@
 article#Contact {
-	border: 3px dashed blue;
+	/*border: 3px dashed blue;*/
 }
 
 				article#Contact > ul {
-					/**/
+					display: flex;
+					flex-wrap: wrap;
+					gap: 16px;
+					justify-content: center;
 				}
 
 								article#Contact > ul > li {
-									/**/
+									/*border: 3px dashed coral;*/
+									box-shadow: var(--main--box-shadow);
+									height: 80px;
+									width: 400px;
 								}
 
 												article#Contact > ul > li > a {
+													/*border: 3px dashed purple;*/
+													align-items: center;
+													background-color: var(--general--foreground-color);
+													column-gap: 16px;
+													display: flex;
+													height: 100%;
+													padding-left: 24px;
 													text-decoration: none;
+													width: 100%;
 												}
 
-																article#Contact > ul > li > a > img {
-																	height: auto;
+													article#Contact > ul > li > a:hover {
+														/*background-image: linear-gradient(to left, var(--general--contrast-color), var(--general--accent-color));*/
+														background-color: var(--general--accent-color);
+													}
+
+																article#Contact > ul > li > a > div,
+																article#Contact > ul > li > a > span {
+																	/*border: 3px dashed green;*/
 																	vertical-align: middle;
-																	width: 64px;
 																}
+
+																article#Contact > ul > li > a > div {
+																	aspect-ratio: 1;
+																	background-color: var(--general--contrast-color);
+																	display: inline-block;
+																	height: 32px;
+																	mask-position: left center;
+																	mask-repeat: no-repeat;
+																	mask-size: contain;
+																	width: auto;
+																}
+
+																	article#Contact > ul > li > a:hover > div {
+																		background-color: var(--general--foreground-color);
+																	}
 
 																article#Contact > ul > li > a > span {
 																	font-family: "Archivo";
-																	font-size: 32px;
-																	vertical-align: middle;
+																	font-size: 24px;
+																	font-variation-settings: "wdth" 65;
+																	line-height: 100%;
 																}
+
+																	article#Contact > ul > li > a:hover > span {
+																		color: var(--general--foreground-color);
+																	}
 
