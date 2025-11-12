@@ -10,7 +10,7 @@ footer {
 				footer > p {
 					font-size: 14px;
 					font-weight: 400;
-					height: 32px;
+					height: var(--copyright--var--height);
 					line-height: 100%;
 					padding-top: 8px;
 				}
