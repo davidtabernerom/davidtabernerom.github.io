@@ -7,7 +7,7 @@ Draft: false
 Released: true
 InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2774800/dafba4ddcf18fbd1fd1a75c0042a50788768f8d8/library_600x900_2x.jpg"
-BannerLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2774800/83e3dfe729e96aef3319c6ab279be48a368f54a7/library_hero_2x.jpg?t=1734960755"
+BannerLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2774800/83e3dfe729e96aef3319c6ab279be48a368f54a7/library_hero_2x.jpg"
 ReleaseDate: 2024-12-23
 Developer: "FivexGames"
 Publisher: "FivexGames"
