@@ -18,22 +18,18 @@ nav {
 								nav > div#Logo > a {
 									/*border: 3px dashed lightgoldenrodyellow;*/
 									text-align: right;
-									text-decoration: none;
 								}
 
-												nav > div#Logo > a > span {
+												nav > div#Logo > a > h1 {
 													/*border: 3px dashed cornflowerblue;*/
 													color: var(--general--foreground-color);
-													font-family: "Archivo";
-													font-size: 48px;
-													font-variation-settings: "wdth" 125;
-													font-weight: 900;
+													font-size: 54px;
 													letter-spacing: -0.05ch;
 													line-height: 0.6em;
 													vertical-align: middle;
 												}
 
-														nav > div#Logo > a > span:last-of-type {
+														nav > div#Logo > a > h1:last-of-type {
 															font-weight: 580;
 															margin-left: -0.5ch;
 														}
@@ -52,14 +48,13 @@ nav {
 
 												nav > ul > li > a {
 													/*border: 3px dashed lightsalmon;*/
-													/*border-radius: var(--general--border-radius);*/
+													/*border-radius: var(--content--border-radius);*/
 													color: var(--general--foreground-color);
 													font-family: "JetBrains Mono";
 													font-size: 28px;
 													font-weight: 400;
 													padding-left: 8px;
 													padding-right: 8px;
-													text-decoration: none;
 													text-transform: uppercase;
 												}
 
@@ -70,7 +65,7 @@ nav {
 
 				nav > div#CV {
 					/*border: 3px dashed greenyellow;*/
-					bottom: 20px;
+					bottom: 24px;
 					left: 0;
 					margin-left: auto;
 					margin-right: auto;
@@ -80,12 +75,11 @@ nav {
 
 								nav > div#CV > a {
 									/*border: 3px dashed lightgoldenrodyellow;*/
-									border-radius: var(--general--border-radius);
+									border-radius: var(--content--border-radius);
 									color: var(--general--foreground-color);
 									display: inline-block;
 									font-size: 16px;
 									padding: 4px 8px;
-									text-decoration: none;
 								}
 
 									nav > div#CV > a:hover {

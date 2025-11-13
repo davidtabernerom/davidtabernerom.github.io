@@ -5,33 +5,32 @@ article#Contact {
 				article#Contact > ul {
 					display: flex;
 					flex-wrap: wrap;
-					gap: 20px;
-					justify-content: center;
+					gap: var(--content--block-separation-size);
+					margin-top: 12px;
 				}
 
 								article#Contact > ul > li {
 									/*border: 3px dashed coral;*/
+									background-color: var(--general--foreground-color);
 									box-shadow: var(--main--box-shadow);
 									height: 80px;
-									width: 440px;
+									width: 480px;
 								}
+
+									article#Contact > ul > li:hover {
+										/*background-image: linear-gradient(to left, var(--general--contrast-color), var(--general--accent-color));*/
+										background-color: var(--general--accent-color);
+									}
 
 												article#Contact > ul > li > a {
 													/*border: 3px dashed purple;*/
 													align-items: center;
-													background-color: var(--general--foreground-color);
-													column-gap: 16px;
+													column-gap: var(--content--block-separation-size);
 													display: flex;
 													height: 100%;
 													padding-left: 24px;
-													text-decoration: none;
 													width: 100%;
 												}
-
-													article#Contact > ul > li > a:hover {
-														/*background-image: linear-gradient(to left, var(--general--contrast-color), var(--general--accent-color));*/
-														background-color: var(--general--accent-color);
-													}
 
 																article#Contact > ul > li > a > div {
 																	aspect-ratio: 1;

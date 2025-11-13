@@ -2,3 +2,97 @@ article#Home {
 	/*border: 3px dashed blue;*/
 }
 
+				article#Home > ul {
+					/*border: 3px dashed blue;*/
+					/*grid-template-rows: 120px;*/
+					gap: var(--content--block-separation-size);
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					margin-bottom: var(--content--section-separation-size);
+				}
+
+								article#Home > ul > li {
+									/*border: 3px dashed green;*/
+								}
+
+										article#Home > ul > li.Text,
+										article#Home > ul > li.Game {
+											background-color: var(--general--foreground-color);
+											box-shadow: var(--main--box-shadow);
+										}
+
+										article#Home > ul > li.Title {
+											margin-bottom: -8px;
+										}
+
+										article#Home > ul > li.Text {
+											/**/
+										}
+
+										article#Home > ul > li.Game {
+											/**/
+										}
+
+												article#Home > ul > li > h2 {
+													/*padding-bottom: 8px;*/
+													line-height: 100%;
+												}
+
+												article#Home > ul > li > a {
+													/*border: 3px dashed purple;*/
+													display: block;
+													height: 100%;
+													padding: 20px;
+													width: 100%;
+												}
+
+													article#Home > ul > li > a:hover {
+														background-color: var(--general--accent-color);
+													}
+
+														article#Home > ul > li#Presentation > a {
+															padding: 48px 72px 60px 60px;
+														}
+
+														article#Home > ul > li.Game > a {
+															padding-top: 16px;
+														}
+
+																article#Home > ul > li > a > h1,
+																article#Home > ul > li > a > h3,
+																article#Home > ul > li > a > span,
+																article#Home > ul > li > a > p {
+																	/**/
+																}
+
+																	article#Home > ul > li > a:hover > h1,
+																	article#Home > ul > li > a:hover > h3,
+																	article#Home > ul > li > a:hover > span,
+																	article#Home > ul > li > a:hover > p {
+																		color: var(--general--foreground-color);
+																	}
+
+																		article#Home > ul > li.Game > a > span {
+																			font-family: "Archivo";
+																			font-size: 16px;
+																			font-variation-settings: "wdth" 125;
+																			font-weight: 450;
+																		}
+
+																		article#Home > ul > li.Game > a > img {
+																			display: block;
+																			margin-top: 4px;
+																			width: 100%;
+																		}
+
+																		article#Home > ul > li.Game > a > p {
+																			margin-bottom: 8px;
+																			margin-top: 8px;
+																		}
+
+																		article#Home > ul > li#Presentation > a > p {
+																			font-size: 32px;
+																			font-weight: 300;
+																			margin-top: 16px;
+																		}
+
