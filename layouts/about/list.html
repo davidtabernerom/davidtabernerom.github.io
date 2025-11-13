@@ -12,37 +12,26 @@
 		</li>
 	</ul>
 
-	<ul class="Qualification">
-		<li>
-			<span>2000</span>
-			<span>1999</span>
-		</li>
-		<li>
-			<img src="/img/logos/creanavarra.png" alt="Entity 1" width="40">
-			<img src="/img/logos/ies_comercio.png" alt="Entity 2" width="40">
-		</li>
-		<li>
-			<h3>Título Grande</h3>
-			<p>Titulado super guay en cositas de videojuegos y tal</p>
-			<h6>Creanavarra & IES Comercio</h6>
-		</li>
-	</ul>
 
+	{{ range site.Data.qualifications }}
+	{{ $qualification := . }}
 	<ul class="Qualification">
 		<li>
-			<span>2000</span>
-			<span>1999</span>
+			<span>{{ .end }}</span>
+			<span>{{ .start }}</span>
 		</li>
 		<li>
-			<img src="/img/logos/creanavarra.png" alt="Entity 1" width="40">
-			<img src="/img/logos/ies_comercio.png" alt="Entity 2" width="40">
+		{{ range .logos }}
+			<img src="{{ . }}" alt="{{ $qualification.id }} logo" width="40">
+		{{ end }}
 		</li>
 		<li>
-			<h3>Título Grande</h3>
-			<p>Titulado super guay en cositas de videojuegos y tal</p>
-			<h6>Creanavarra & IES Comercio</h6>
+			<h3>{{ .grade }}</h3>
+			<p>{{ .qualification }}</p>
+			<h6>{{ .id }}</h6>
 		</li>
 	</ul>
+	{{ end }}
 
 </article>
 {{ end }}

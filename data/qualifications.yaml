@@ -1,0 +1,32 @@
+- id: Universidad Europea de Madrid
+  end: 2025
+  start: 2023
+  grade: "Licenciatura"
+  qualification: "Diseño de Videojuegos"
+  logos:
+  - "/img/logos/universidad_europea.png"
+
+- id: Creanavarra Escuela Superior de Diseño
+  end: 2022
+  start: 2019
+  grade: "Grado Superior"
+  qualification: "Diseño y Creación de Videojuegos"
+  logos:
+  - "/img/logos/creanavarra.png"
+
+- id: Instituto de Educación Secundaria Comercio
+  end: 2019
+  start: 2015
+  grade: "Formación Profesional de Grados Medio y Superior"
+  qualification: "Desarrollo de Aplicaciones Multiplataforma"
+  logos:
+  - "/img/logos/ies_comercio.png"
+
+- id: Cisco Netacad & Linux Professional Institute
+  end: 2017
+  start: 2015
+  grade: "Certificación"
+  qualification: "Linux Essentials Professional Development"
+  logos:
+  - "/img/logos/cisco_netacad.png"
+  - "/img/logos/linux_professional_institute.png"
