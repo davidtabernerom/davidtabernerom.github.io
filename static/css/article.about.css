@@ -1,44 +1,68 @@
 article#About {
-	/*border: 3px dashed blue;*/
-	position: relative;
+	border: 3px dashed blue;
 }
 
-				article#About > p {
-					/*border: 3px dashed lightgreen;*/
-					font-size: 24px;
+				article#About > ul {
+					/*border: 3px dashed crimson;*/
+					background-color: var(--general--foreground-color);
+					box-shadow: var(--main--box-shadow);
+					margin-bottom: var(--content--block-separation-size);
 				}
 
-						article#About > p:nth-of-type(1) {
-							margin-left: 80px;
-							margin-right: 320px;
+						article#About > ul:last-of-type {
+							margin-bottom: 0;
 						}
 
-						article#About > p:nth-of-type(2) {
-							margin-left: 160px;
-							margin-right: 240px;
+								article#About > ul > li {
+									border: 3px dashed gainsboro;
+								}
+
+						article#About > ul#Presentation {
+							align-items: flex-end;
+							display: flex;
 						}
 
-						article#About > p:nth-of-type(3) {
-							margin-left: 240px;
-							margin-right: 160px;
+										article#About > ul#Presentation > li {
+											/**/
+										}
+
+												article#About > ul#Presentation > li:first-child {
+													flex: 0 0 240px;
+												}
+
+																article#About > ul#Presentation > li:first-child > img {
+																	display: block;
+																	height: auto;
+																	width: 100%;
+																}
+
+												article#About > ul#Presentation > li:last-child {
+													flex: 1 1 auto;
+												}
+
+																article#About > ul#Presentation > li:first-child > p {
+																	/**/
+																}
+
+						article#About > ul.Qualification {
+							/**/
 						}
 
-						article#About > p:nth-of-type(4) {
-							margin-left: 320px;
-							margin-right: 80px;
-						}
+										article#About > ul.Qualification > li {
+											/**/
+										}
 
-						article#About > p:nth-of-type(5) {
-							margin-left: 400px;
-							margin-right: 0px;
-						}
+				/*article#About > p {
+					border: 3px dashed lightgreen;
+					font-size: 24px;
+				}*/
 
-				article#About > img {
-					/*border: 3px dashed crimson;*/
+				/*article#About > img {
+					border: 3px dashed crimson;
 					bottom: 0;
 					height: auto;
 					left: 0;
 					position: absolute;
 					width: 360px;
-				}
+				}*/
 
