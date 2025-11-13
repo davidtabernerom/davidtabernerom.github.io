@@ -7,6 +7,7 @@ Draft: false
 Released: true
 InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1898880/library_600x900_2x.jpg"
+BannerLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1898880/library_hero_2x.jpg"
 ReleaseDate: 2023-11-02
 Developer: "Praenaris"
 Publisher: "Gammera Nest"

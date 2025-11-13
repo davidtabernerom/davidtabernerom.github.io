@@ -7,6 +7,7 @@ Draft: false
 Released: false
 InDevelopment: true
 CoverLink: "/img/no_cover.png"
+BannerLink: "/img/no_banner.png"
 ReleaseDate: 2026-12-31
 Developer: "Praenaris"
 Publisher: "Praenaris"

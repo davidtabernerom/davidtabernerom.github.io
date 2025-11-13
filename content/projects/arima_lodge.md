@@ -7,6 +7,7 @@ Draft: false
 Released: true
 InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3310190/482e4cd06875d880dc0b55fd6c463286a12ee26c/library_600x900_2x.jpg"
+BannerLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3310190/8faaa2278a86ce560ce7a97e9babf3beb2cc4e73/library_hero_2x.jpg"
 ReleaseDate: 2024-12-10
 Developer: "Praenaris"
 Publisher: "Praenaris"

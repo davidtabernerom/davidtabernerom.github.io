@@ -17,7 +17,7 @@
 			</a>
 		</li>
 		{{ range first 1 (sort (where (where .Site.RegularPages "Params.InDevelopment" true) "Section" "projects") "Params.ReleaseDate" "asc") }}
-		<li class="Game" style="grid-column: span 1;">
+		<li class="Game Unreleased" style="grid-column: span 1; background-image: url('{{ .Params.BannerLink }}');">
 			<a href="{{ .RelPermalink }}">
 				<h3>{{ .Title }}</h3>
 				<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>
@@ -35,7 +35,7 @@
 		</li>
 
 		{{ range first 3 (sort (where (where .Site.RegularPages "Params.Released" true) "Section" "projects") "Params.ReleaseDate" "desc") }}
-		<li class="Game" style="grid-column: span 1;">
+		<li class="Game Released" style="grid-column: span 1; background-image: url('{{ .Params.BannerLink }}');">
 			<a href="{{ .RelPermalink }}">
 				<h3>{{ .Title }}</h3>
 				<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>
@@ -47,8 +47,10 @@
 		</li>
 		{{ end }}
 
-		<li class="Text" style="grid-column: span 1;">
-			<a href="/projects/"><span>View all projects →</span></a>
+		<li id="MoreProjects" class="Text" style="grid-column: 2 / span 1;">
+			<a href="/projects/">
+				<p>View all projects →</p>
+			</a>
 		</li>
 	</ul>
 

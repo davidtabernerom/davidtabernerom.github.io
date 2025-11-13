@@ -30,7 +30,9 @@ article#Home {
 										}
 
 										article#Home > ul > li.Game {
-											/**/
+											background-position: center;
+											background-repeat: no-repeat;
+											background-size: auto 150%;
 										}
 
 												article#Home > ul > li > h2 {
@@ -46,8 +48,17 @@ article#Home {
 													width: 100%;
 												}
 
+														article#Home > ul > li.Unreleased > a {
+															background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.35), var(--general--text--color) 80%);
+														}
+
+														article#Home > ul > li.Released > a {
+															background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.35), var(--general--foreground-color) 80%);
+														}
+
 													article#Home > ul > li > a:hover {
 														background-color: var(--general--accent-color);
+														background-image: none;
 													}
 
 														article#Home > ul > li#Presentation > a {
@@ -94,5 +105,9 @@ article#Home {
 																			font-size: 32px;
 																			font-weight: 300;
 																			margin-top: 16px;
+																		}
+
+																		article#Home > ul > li#MoreProjects > a > p {
+																			font-size: 24px;
 																		}
 
