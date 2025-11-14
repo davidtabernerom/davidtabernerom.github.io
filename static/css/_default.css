@@ -5,6 +5,7 @@
 	--general--foreground-color: rgb(240, 240, 240);
 	--general--text--color: rgb(45, 50, 55);
 
+	--content--block-padding: 20px;
 	--content--block-separation-size: 20px;
 	--content--border-radius: 8px;
 	--content--max-width: 1000px;

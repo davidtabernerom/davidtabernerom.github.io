@@ -44,7 +44,7 @@ article#Home {
 													/*border: 3px dashed purple;*/
 													display: block;
 													height: 100%;
-													padding: 20px;
+													padding: var(--content--block-padding);
 													width: 100%;
 												}
 

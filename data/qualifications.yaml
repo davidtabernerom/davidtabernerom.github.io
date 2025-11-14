@@ -22,11 +22,27 @@
   logos:
   - "/img/logos/ies_comercio.png"
 
-- id: Cisco Netacad & Linux Professional Institute
-  end: 2017
-  start: 2015
+- id: Federación de Empresas de La Rioja (FER)
+  end: 2018
+  start: null
+  grade: "Certificación"
+  qualification: "PROYECTO DITEC: Proyectos Ágiles con Laravel y Angular"
+  logos:
+  - "/img/logos/federacion_empresas_rioja.png"
+
+- id: Cisco Networking Academy & Linux Professional Institute
+  end: 2016
+  start: null
   grade: "Certificación"
   qualification: "Linux Essentials Professional Development"
   logos:
   - "/img/logos/cisco_netacad.png"
   - "/img/logos/linux_professional_institute.png"
+
+- id: RiojaSkills
+  end: 2016
+  start: null
+  grade: "Certificación"
+  qualification: "Finalista del Campeonato"
+  logos:
+  - "/img/logos/riojaskills.png"

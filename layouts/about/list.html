@@ -6,9 +6,10 @@
 			<img src="/img/selfie.png" alt="Selfie photo">
 		</li>
 		<li>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eaque tenetur, obcaecati accusamus quasi voluptatem libero maxime nobis autem corporis at omnis voluptas deserunt! Dolores quaerat nostrum numquam tenetur itaque!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas rerum dolorem dolorum et quidem nam aperiam quas ea hic? Voluptas distinctio molestias repudiandae deleniti delectus quibusdam, magni reprehenderit dicta!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde repellat inventore eaque quas ducimus, quam aliquid. Dolores non ducimus ut harum vero minima sequi error, omnis, distinctio perferendis consequuntur!</p>
+			<p>I'm a video game designer and developer as well as an experienced cross-platform software developer.</p>
+			<p>I also worked as a sysadmin, and web designer and developer, creating websites and web applications.</p>
+			<p>I was proudly part of the Praenaris team during the development of the notable The Silent Swan, a finalist in the PlayStation Talents 2022 program and released in 2023 on Steam for both Windows and Linux, and PlayStation Store for PS5, both digitally and physically.</p>
+			<p>And over the last few years, I've been working on various strange projects in search of that game that will mark a turning point in the industry.</p>
 		</li>
 	</ul>
 
@@ -18,7 +19,9 @@
 	<ul class="Qualification">
 		<li>
 			<span>{{ .end }}</span>
-			<span>{{ .start }}</span>
+			{{ if .start }}
+				<span>{{ .start }}</span>
+			{{ end }}
 		</li>
 		<li>
 		{{ range .logos }}

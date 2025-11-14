@@ -1,12 +1,12 @@
 article#About {
-	border: 3px dashed blue;
+	/*border: 3px dashed blue;*/
 }
 
 				article#About > ul {
 					/*border: 3px dashed crimson;*/
 					background-color: var(--general--foreground-color);
 					box-shadow: var(--main--box-shadow);
-					margin-bottom: var(--content--block-separation-size);
+					padding: var(--content--block-padding);
 				}
 
 						article#About > ul:last-of-type {
@@ -14,12 +14,15 @@ article#About {
 						}
 
 								article#About > ul > li {
-									border: 3px dashed gainsboro;
+									/*border: 3px dashed gainsboro;*/
 								}
 
 						article#About > ul#Presentation {
 							align-items: flex-end;
 							display: flex;
+							gap: 28px;
+							margin-bottom: var(--content--section-separation-size);
+							padding: 48px 48px 40px 40px;
 						}
 
 										article#About > ul#Presentation > li {
@@ -27,7 +30,7 @@ article#About {
 										}
 
 												article#About > ul#Presentation > li:first-child {
-													flex: 0 0 240px;
+													flex: 0 0 360px;
 												}
 
 																article#About > ul#Presentation > li:first-child > img {
@@ -40,12 +43,22 @@ article#About {
 													flex: 1 1 auto;
 												}
 
-																article#About > ul#Presentation > li:first-child > p {
-																	/**/
+																article#About > ul#Presentation > li:last-child > p {
+																	font-size: 22px;
+																	font-weight: 300;
+																	margin-top: 0.5em;
 																}
 
+																		article#About > ul#Presentation > li:last-child > p:first-of-type {
+																			font-family: "Archivo";
+																			font-size: 26px;
+																			font-variation-settings: "wdth" 65;
+																			font-weight: 600;
+																			margin-top: 0;
+																		}
+
 						article#About > ul.Qualification {
-							/**/
+							margin-bottom: var(--content--block-separation-size);
 						}
 
 										article#About > ul.Qualification > li {
