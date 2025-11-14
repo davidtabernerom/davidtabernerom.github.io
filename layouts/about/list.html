@@ -13,24 +13,24 @@
 		</li>
 	</ul>
 
-
+	<h2>My qualifications</h2>
 	{{ range site.Data.qualifications }}
 	{{ $qualification := . }}
 	<ul class="Qualification">
-		<li>
+		<li class="LeftAligned">
 			<span>{{ .end }}</span>
 			{{ if .start }}
 				<span>{{ .start }}</span>
 			{{ end }}
 		</li>
-		<li>
+		<li class="RightAligned">
 		{{ range .logos }}
-			<img src="{{ . }}" alt="{{ $qualification.id }} logo" width="40">
+			<img src="{{ . }}" alt="{{ $qualification.id }} logo">
 		{{ end }}
 		</li>
-		<li>
-			<h3>{{ .grade }}</h3>
-			<p>{{ .qualification }}</p>
+		<li class="LeftAligned">
+			<h4>{{ .grade }}</h4>
+			<h5>{{ .qualification }}</h5>
 			<h6>{{ .id }}</h6>
 		</li>
 	</ul>

@@ -25,24 +25,31 @@
 - id: Federación de Empresas de La Rioja (FER)
   end: 2018
   start: null
-  grade: "Certificación"
+  grade: "Certificación FER"
   qualification: "PROYECTO DITEC: Proyectos Ágiles con Laravel y Angular"
   logos:
   - "/img/logos/federacion_empresas_rioja.png"
 
-- id: Cisco Networking Academy & Linux Professional Institute
+- id: Linux Professional Institute
   end: 2016
   start: null
-  grade: "Certificación"
-  qualification: "Linux Essentials Professional Development"
+  grade: "Certificación LPI"
+  qualification: "LE-1: Linux Essentials"
+  logos:
+  - "/img/logos/linux_professional_institute.png"
+
+- id: Cisco Networking Academy
+  end: 2016
+  start: null
+  grade: "Certificación Cisco"
+  qualification: "NDG Linux Essentials"
   logos:
   - "/img/logos/cisco_netacad.png"
-  - "/img/logos/linux_professional_institute.png"
 
 - id: RiojaSkills
   end: 2016
   start: null
-  grade: "Certificación"
+  grade: "Certificación RiojaSkills"
   qualification: "Finalista del Campeonato"
   logos:
   - "/img/logos/riojaskills.png"

@@ -2,11 +2,16 @@ article#About {
 	/*border: 3px dashed blue;*/
 }
 
+				article#About > h2 {
+					line-height: 100%;
+					margin-bottom: 12px;
+				}
+
 				article#About > ul {
 					/*border: 3px dashed crimson;*/
 					background-color: var(--general--foreground-color);
 					box-shadow: var(--main--box-shadow);
-					padding: var(--content--block-padding);
+					padding: 28px 32px 28px 32px;
 				}
 
 						article#About > ul:last-of-type {
@@ -58,12 +63,49 @@ article#About {
 																		}
 
 						article#About > ul.Qualification {
+							column-gap: 32px;
+							display: grid;
+							grid-template-columns: 80px 160px 1fr;
 							margin-bottom: var(--content--block-separation-size);
 						}
+
+								article#About > ul.Qualification:last-of-type {
+									margin-bottom: 0;
+								}
 
 										article#About > ul.Qualification > li {
 											/**/
 										}
+
+														article#About > ul.Qualification > li > span {
+															font-family: "Archivo";
+															font-variation-settings: "wdth" 125;
+															line-height: 100%;
+														}
+
+																article#About > ul.Qualification > li > span:first-of-type {
+																	font-size: 24px;
+																	font-weight: 450;
+																}
+
+																article#About > ul.Qualification > li > span:nth-of-type(2) {
+																	font-size: 16px;
+																	font-weight: 225;
+																}
+
+														article#About > ul.Qualification > li > img {
+															display: inline-block;
+															height: auto;
+															margin-top: 4px;
+															max-height: 48px;
+															max-width: 100%;
+															object-fit: contain;
+															width: auto;
+														}
+
+														article#About > ul.Qualification > li > h5 {
+															margin-bottom: 12px;
+														}
 
 				/*article#About > p {
 					border: 3px dashed lightgreen;
