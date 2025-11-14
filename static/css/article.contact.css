@@ -2,11 +2,15 @@ article#Contact {
 	/*border: 3px dashed blue;*/
 }
 
+				article#Contact > h2 {
+					line-height: 100%;
+					margin-bottom: 12px;
+				}
+
 				article#Contact > ul {
 					display: flex;
 					flex-wrap: wrap;
 					gap: var(--content--block-separation-size);
-					margin-top: 12px;
 				}
 
 								article#Contact > ul > li {

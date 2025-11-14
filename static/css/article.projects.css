@@ -2,3 +2,31 @@ article#Projects {
 	/*border: 3px dashed blue;*/
 }
 
+				article#Projects > h2 {
+					line-height: 100%;
+					margin-bottom: 12px;
+				}
+
+				article#Projects > ul {
+					margin-bottom: var(--content--section-separation-size);
+				}
+
+						article#Projects > ul:last-of-type {
+							margin-bottom: 0;
+						}
+
+								article#Projects > ul > li {
+									background-color: var(--general--foreground-color);
+									box-shadow: var(--main--box-shadow);
+									margin-bottom: var(--content--block-separation-size);
+								}
+
+										article#Projects > ul > li:last-of-type {
+											margin-bottom: 0;
+										}
+
+												article#Projects > ul > li > a {
+													height: 100%;
+													width: 100%;
+												}
+

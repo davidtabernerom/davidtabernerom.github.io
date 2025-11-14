@@ -5,9 +5,10 @@
 	<ul>
 		{{ range (sort (where .Pages "Params.InDevelopment" true) "Params.ReleaseDate" "asc") }}
 		<li>
-			<h2><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</a></h2>
-			<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="100">
-			<p>{{ .Params.description }}</p>
+			<a href="{{ .RelPermalink }}">
+				<h1>{{ .Title }}</h1>
+				<p>{{ .Params.Description }}</p>
+			</a>
 		</li>
 		{{ end }}
 	</ul>
