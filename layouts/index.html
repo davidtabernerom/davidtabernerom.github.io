@@ -24,7 +24,7 @@
 				<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>
 				<!--<span>Started in </span><span>{{ .Date.Format "2006" }}</span>-->
 				<!--<span>— Released in </span><span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>-->
-				<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">
+				<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" {{ partial "datatags.html" site.Data.datatags.tilt | safeHTMLAttr }}>
 			</a>
 		</li>
 		{{ end }}
@@ -42,7 +42,7 @@
 				<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>
 				<!--<span>Started in </span><span>{{ .Date.Format "2006" }}</span>-->
 				<!--<span>— Released in </span><span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>-->
-				<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">
+				<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" {{ partial "datatags.html" site.Data.datatags.tilt | safeHTMLAttr }}>
 				<p>{{ .Params.description }}</p>
 			</a>
 		</li>

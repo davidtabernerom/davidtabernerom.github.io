@@ -1,0 +1,3 @@
+{{- with . -}}
+	{{- range $key, $value := . -}}data-{{ $key }}="{{ $value }}" {{ end -}}
+{{- end -}}

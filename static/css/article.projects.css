@@ -26,6 +26,9 @@ article#Projects {
 										}
 
 												article#Projects > ul > li > a {
+													/*border: 3px dashed orange;*/
+													background-image: linear-gradient(to left, var(--general--accent-color), rgba(0, 0, 0, 0.5) 50%);
+													display: block;
 													height: 100%;
 													width: 100%;
 												}
