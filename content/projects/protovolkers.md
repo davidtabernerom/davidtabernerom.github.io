@@ -9,7 +9,7 @@ InDevelopment: true
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2944420/450f575d258a8e3b6d0a610980df0b1e979620d7/library_600x900_2x.jpg"
 BannerLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2944420/d3dd86d7c88a0231b94eab374bbf560aa862cf98/library_hero_2x.jpg"
 ReleaseDate: 2030-12-31
-Developer: "Dragon Resonance"
+Developer: "DragonResonance"
 Publisher: "Praenaris"
 Role: "Solo developer"
 

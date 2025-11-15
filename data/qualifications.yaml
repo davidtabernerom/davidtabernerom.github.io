@@ -4,7 +4,7 @@
   grade: "Licenciatura"
   qualification: "Diseño de Videojuegos"
   logos:
-  - "/img/logos/universidad_europea.png"
+  - "/img/qualifications/universidad_europea.png"
 
 - id: Creanavarra Escuela Superior de Diseño
   end: 2022
@@ -12,7 +12,7 @@
   grade: "Grado Superior"
   qualification: "Diseño y Creación de Videojuegos"
   logos:
-  - "/img/logos/creanavarra.png"
+  - "/img/qualifications/creanavarra.png"
 
 - id: Instituto de Educación Secundaria Comercio
   end: 2019
@@ -20,7 +20,7 @@
   grade: "Formación Profesional de Grados Medio y Superior"
   qualification: "Desarrollo de Aplicaciones Multiplataforma"
   logos:
-  - "/img/logos/ies_comercio.png"
+  - "/img/qualifications/ies_comercio.png"
 
 - id: Federación de Empresas de La Rioja (FER)
   end: 2018
@@ -28,7 +28,7 @@
   grade: "Certificación FER"
   qualification: "PROYECTO DITEC: Proyectos Ágiles con Laravel y Angular"
   logos:
-  - "/img/logos/federacion_empresas_rioja.png"
+  - "/img/qualifications/federacion_empresas_rioja.png"
 
 - id: Linux Professional Institute
   end: 2016
@@ -36,7 +36,7 @@
   grade: "Certificación LPI"
   qualification: "LE-1: Linux Essentials"
   logos:
-  - "/img/logos/linux_professional_institute.png"
+  - "/img/qualifications/linux_professional_institute.png"
 
 - id: Cisco Networking Academy
   end: 2016
@@ -44,7 +44,7 @@
   grade: "Certificación Cisco"
   qualification: "NDG Linux Essentials"
   logos:
-  - "/img/logos/cisco_netacad.png"
+  - "/img/qualifications/cisco_netacad.png"
 
 - id: RiojaSkills
   end: 2016
@@ -52,4 +52,4 @@
   grade: "Certificación RiojaSkills"
   qualification: "Finalista del Campeonato"
   logos:
-  - "/img/logos/riojaskills.png"
+  - "/img/qualifications/riojaskills.png"

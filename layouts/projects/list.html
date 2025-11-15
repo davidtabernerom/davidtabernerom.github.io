@@ -4,10 +4,23 @@
 	<h2>Upcoming Projects</h2>
 	<ul>
 		{{ range (sort (where .Pages "Params.InDevelopment" true) "Params.ReleaseDate" "asc") }}
-		<li style="background-image: url('{{ .Params.BannerLink }}');">
+		<li>
 			<a href="{{ .RelPermalink }}">
-				<h1>{{ .Title }}</h1>
-				<p>{{ .Params.Description }}</p>
+				<ul>
+					<li class="Datetime">
+						<span>{{ .Date.Format "2006" }}<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span></span>
+					</li>
+					<li class="Cover">
+						<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" {{ partial "datatags.html" site.Data.datatags.tilt | safeHTMLAttr }}>
+					</li>
+					<li class="Banner" style="background-image: url('{{ .Params.BannerLink }}');">
+						{{ $developer := index site.Data.studios .Params.Developer }}
+						<img src="{{ $developer.image }}" alt="{{ $developer.name }} logo" width="80">
+						<h1>{{ .Title }}</h1>
+						<p>{{ .Params.Description }}</p>
+						<p>Worked as {{ .Params.Role }}</p>
+					</li>
+				</ul>
 			</a>
 		</li>
 		{{ end }}

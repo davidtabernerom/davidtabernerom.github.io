@@ -16,8 +16,8 @@ article#Projects {
 						}
 
 								article#Projects > ul > li {
-									background-color: var(--general--foreground-color);
-									box-shadow: var(--main--box-shadow);
+									/*background-color: var(--general--foreground-color);*/
+									/*box-shadow: var(--main--box-shadow);*/
 									margin-bottom: var(--content--block-separation-size);
 								}
 
@@ -26,10 +26,57 @@ article#Projects {
 										}
 
 												article#Projects > ul > li > a {
-													/*border: 3px dashed orange;*/
-													background-image: linear-gradient(to left, var(--general--accent-color), rgba(0, 0, 0, 0.5) 50%);
+													/*background-image: linear-gradient(to left, var(--general--accent-color), rgba(0, 0, 0, 0.5) 50%);*/
+													border: 3px dashed orange;
 													display: block;
 													height: 100%;
 													width: 100%;
 												}
+
+																article#Projects > ul > li > a > ul {
+																	display: flex;
+																}
+
+																				article#Projects > ul > li > a > ul > li {
+																					border: 3px dashed blueviolet;
+																				}
+
+																						article#Projects > ul > li > a > ul > li.Datetime {
+																							flex: 0 0 32px;
+																							text-align: right;
+																						}
+
+																										article#Projects > ul > li > a > ul > li.Datetime  span {
+																											font-family: "Archivo";
+																											font-variation-settings: "wdth" 125;
+																											line-height: 100%;
+																											transform: rotate(180deg);
+																											vertical-align: text-bottom;
+																											writing-mode: vertical-rl;
+																										}
+
+																												article#Projects > ul > li > a > ul > li.Datetime > span {
+																													font-size: 16px;
+																													font-weight: 225;
+																												}
+
+																												article#Projects > ul > li > a > ul > li.Datetime > span > span {
+																													font-size: 24px;
+																													font-weight: 450;
+																													margin-top: 8px;
+																												}
+
+																						article#Projects > ul > li > a > ul > li.Cover {
+																							flex: 0 0 160px;
+																						}
+
+																										article#Projects > ul > li > a > ul > li.Cover > img {
+																											display: block;
+																											height: auto;
+																											width: 100%;
+																										}
+
+																						article#Projects > ul > li > a > ul > li.Banner {
+																							flex: 1 1 auto;
+																						}
 
