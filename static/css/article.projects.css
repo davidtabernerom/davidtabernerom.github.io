@@ -67,10 +67,11 @@ article#Projects {
 																												}
 
 																						article#Projects > ul > li > a > ul > li.Cover {
-																							flex: 0 0 160px;
+																							flex: 0 0 200px;
 																						}
 
 																										article#Projects > ul > li > a > ul > li.Cover > img {
+																											box-shadow: var(--main--box-shadow);
 																											display: block;
 																											height: auto;
 																											width: 100%;
@@ -78,5 +79,8 @@ article#Projects {
 
 																						article#Projects > ul > li > a > ul > li.Banner {
 																							flex: 1 1 auto;
+																							height: 240px;
+																							align-self: self-end;
+																							margin-bottom: 16px;
 																						}
 

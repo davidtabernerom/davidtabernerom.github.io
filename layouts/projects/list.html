@@ -11,7 +11,7 @@
 						<span>{{ .Date.Format "2006" }}<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span></span>
 					</li>
 					<li class="Cover">
-						<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" {{ partial "datatags.html" site.Data.datatags.tilt | safeHTMLAttr }}>
+						<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">
 					</li>
 					<li class="Banner" style="background-image: url('{{ .Params.BannerLink }}');">
 						{{ $developer := index site.Data.studios .Params.Developer }}
