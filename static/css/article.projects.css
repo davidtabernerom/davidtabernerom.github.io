@@ -86,6 +86,9 @@ article#Projects {
 
 																						article#Projects > ul > li > a > ul > li.Banner {
 																							align-self: self-end;
+																							background-position: center;
+																							background-repeat: no-repeat;
+																							background-size: cover;
 																							box-shadow: var(--main--box-shadow);
 																							flex: 1 1 auto;
 																							height: 240px;

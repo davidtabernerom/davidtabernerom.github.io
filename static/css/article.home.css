@@ -32,7 +32,7 @@ article#Home {
 										article#Home > ul > li.Game {
 											background-position: center;
 											background-repeat: no-repeat;
-											background-size: auto 150%;
+											background-size: cover;
 										}
 
 												article#Home > ul > li > h2 {

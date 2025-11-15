@@ -1,6 +1,29 @@
 {{ define "article" }}
 <article id="Project">
 
+	<ul>
+		<li class="Sheet">
+			<ul>
+				<li>
+					<div class="Key">marco</div>
+					<div class="Value">polo</div>
+				</li>
+				<li>
+					<div class="Key">marco</div>
+					<div class="Value">polo</div>
+				</li>
+				<li>
+					<div class="Key">marco</div>
+					<div class="Value">polo</div>
+				</li>
+			</ul>
+		</li>
+
+		<li class="Cover">
+			<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">
+		</li>
+	</ul>
+
 	<h1>{{ .Title }} ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</h1>
 	<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="200">
 	<p>{{ .Description }}</p>
