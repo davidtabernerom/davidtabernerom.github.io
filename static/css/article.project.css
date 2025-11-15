@@ -59,11 +59,12 @@ article#Project {
 
 																						article#Project > ul > li.Sheet > ul > li > .Value {
 																							/*border: 3px dashed lightseagreen;*/
+																							font-size: 18px;
+																							font-weight: 300;
 																							text-align: left;
 																						}
 
 																								article#Project > ul > li.Sheet > ul > li.Highlighted > .Value {
-																									font-size: 18px;
 																									font-weight: 600;
 																								}
 
