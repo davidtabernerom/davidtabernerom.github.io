@@ -21,7 +21,7 @@ article#Project {
 										}
 
 														article#Project > ul > li.Sheet > h2 {
-															margin-top: var(--content--section-separation-size);
+															margin-top: var(--content--block-separation-size);
 														}
 
 														article#Project > ul > li.Sheet > ul {
