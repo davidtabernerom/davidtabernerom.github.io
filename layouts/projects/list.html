@@ -14,11 +14,11 @@
 						<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">
 					</li>
 					<li class="Banner" style="background-image: linear-gradient(to left, var(--general--accent-color) 20%, rgba(0, 0, 0, 0.5) 80%), url('{{ .Params.BannerLink }}');">
-						{{ $developer := index site.Data.studios .Params.Developer }}
+						{{ $developer := index site.Data.studios .Params.MainDeveloper }}
 						<div style="mask-image: url('{{ $developer.image }}');"></div>
 						<h4>{{ if .Params.ShortenedTitle }}{{ .Params.ShortenedTitle }}{{ else }}{{ .Title }}{{ end }}</h4>
 						<p>{{ .Params.Description }}</p>
-						<span>{{ .Params.Role }}</span>
+						<span>{{ .Params.JobPosition }}</span>
 					</li>
 				</ul>
 			</a>
@@ -39,11 +39,11 @@
 						<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">
 					</li>
 					<li class="Banner" style="background-image: linear-gradient(to left, var(--general--accent-color) 20%, rgba(0, 0, 0, 0.5) 80%), url('{{ .Params.BannerLink }}');">
-						{{ $developer := index site.Data.studios .Params.Developer }}
+						{{ $developer := index site.Data.studios .Params.MainDeveloper }}
 						<div style="mask-image: url('{{ $developer.image }}');"></div>
 						<h4>{{ if .Params.ShortenedTitle }}{{ .Params.ShortenedTitle }}{{ else }}{{ .Title }}{{ end }}</h4>
 						<p>{{ .Params.Description }}</p>
-						<span>{{ .Params.Role }}</span>
+						<span>{{ .Params.JobPosition }}</span>
 					</li>
 				</ul>
 			</a>

@@ -10,11 +10,14 @@ InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2774800/dafba4ddcf18fbd1fd1a75c0042a50788768f8d8/library_600x900_2x.jpg"
 BannerLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2774800/83e3dfe729e96aef3319c6ab279be48a368f54a7/library_hero_2x.jpg"
 ReleaseDate: 2024-12-23
-Developer: "FivexGames"
-Publisher: "FivexGames"
-Role: "Mechanics Developer & Technical Assistant"
+MainDeveloper: "FivexGames"
+Developers:
+  - "FivexGames"
+Publishers:
+  - "FivexGames"
+JobPosition: "Mechanics Developer & Technical Assistant"
 
 Links:
   - store: "Steam"
-    url: "https://store.steampowered.com/app/2774800/FallNation_Lost_Stories/"
+    link: "https://store.steampowered.com/app/2774800/FallNation_Lost_Stories/"
 ---

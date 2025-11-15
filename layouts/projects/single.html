@@ -1,21 +1,78 @@
 {{ define "article" }}
 <article id="Project">
 
+	<h2>Project sheet</h2>
 	<ul>
 		<li class="Sheet">
 			<ul>
 				<li>
-					<div class="Key">marco</div>
-					<div class="Value">polo</div>
+					<div class="Key">Full title</div>
+					<div class="Value">{{ .Title }}</div>
 				</li>
 				<li>
-					<div class="Key">marco</div>
-					<div class="Value">polo</div>
+					<div class="Key">Description</div>
+					<div class="Value">{{ .Description }}</div>
 				</li>
 				<li>
-					<div class="Key">marco</div>
-					<div class="Value">polo</div>
+					<div class="Key">Release date</div>
+					<div class="Value">{{ .Params.ReleaseDate | time.Format "2006-01-02" }}</div>
 				</li>
+				<li>
+					{{ $creator := index site.Data.studios .Params.MainDeveloper }}
+					<div class="Key">Created by</div>
+					<div class="Value">
+						<a target="_blank" href="{{ $creator.link }}">
+							<img src="{{ $creator.image }}" alt="{{ $creator.name }} logo">
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="Key">Developed by</div>
+					<div class="Value">
+						{{ range .Params.Developers }}
+						{{ $developer := index site.Data.studios . }}
+						<a target="_blank" href="{{ $developer.link }}">
+							<img src="{{ $developer.image }}" alt="{{ $developer.name }} logo">
+						</a>
+						{{ end }}
+					</div>
+				</li>
+				<li>
+					<div class="Key">Published by</div>
+					<div class="Value">
+						{{ range .Params.Publishers }}
+						{{ $publisher := index site.Data.studios . }}
+						<a target="_blank" href="{{ $publisher.link }}">
+							<img src="{{ $publisher.image }}" alt="{{ $publisher.name }} logo">
+						</a>
+						{{ end }}
+					</div>
+				</li>
+			</ul>
+
+			<h2>My experience</h2>
+			<ul>
+				<li>
+					<div class="Key">Position</div>
+					<div class="Value">{{ .Params.JobPosition }}</div>
+				</li>
+				<li>
+					<div class="Key">Start date</div>
+					<div class="Value">{{ .Date.Format "2006-01-02" }}</div>
+				</li>
+			</ul>
+
+			<h2>Links</h2>
+			<ul>
+			{{ with .Params.Links }}
+			{{ range . }}
+				{{ $store := index site.Data.stores .store }}
+				<li>
+					<div class="Key">{{ $store.name }}</div>
+					<a class="Value" target="_blank" href="{{ .link }}">{{ .link }}</a>
+				</li>
+			{{ end }}
+			{{ end }}
 			</ul>
 		</li>
 
@@ -23,33 +80,6 @@
 			<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">
 		</li>
 	</ul>
-
-	<h1>{{ .Title }} ({{ .Date.Format "2006" }} - {{ .Params.ReleaseDate | time.Format "2006" }})</h1>
-	<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" width="200">
-	<p>{{ .Description }}</p>
-	<p>Developed by {{ .Params.Developer }}</p>
-	<p>Published by {{ .Params.Publisher }}</p>
-	<p>Role: {{ .Params.Role }}</p>
-
-	<hr>
-
-	{{ with .Params.Links }}
-	<section class="store-links">
-		<h3>Available on:</h3>
-		<ul>
-		{{ range . }}
-			{{ $store := index site.Data.stores .store }}
-			<li>
-				<p><a target="_blank" href="{{ .url }}">{{ $store.name }}</a></p>
-			</li>
-		{{ end }}
-		</ul>
-	</section>
-	{{ end }}
-
-	<hr>
-
-	<p><a href="/projects/">← Back to project list</a></p>
 
 </article>
 {{ end }}

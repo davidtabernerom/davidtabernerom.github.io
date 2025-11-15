@@ -1,11 +1,20 @@
 DragonResonance:
   name: "Dragon Resonance"
   image: "/img/studios/dragon_resonance.png"
-
-Praenaris:
-  name: "Praenaris"
-  image: "/img/studios/praenaris.png"
+  link: "https://www.dragonresonance.com/"
 
 FivexGames:
   name: "FivexGames"
   image: "/img/studios/fivexgames.png"
+  link: "https://fivexgames.com/"
+
+GammeraNest:
+  name: "Gammera Nest"
+  image: "/img/studios/gammera_nest.png"
+  link: "https://gammeranest.com/"
+
+Praenaris:
+  name: "Praenaris"
+  image: "/img/studios/praenaris.png"
+  link: "https://www.praenaris.com/"
+

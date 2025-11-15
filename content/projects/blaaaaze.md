@@ -10,9 +10,13 @@ InDevelopment: true
 CoverLink: "/img/no_cover.png"
 BannerLink: "/img/no_banner.png"
 ReleaseDate: 2050-12-31
-Developer: "DragonResonance"
-Publisher: "Praenaris"
-Role: "Solo developer"
+MainDeveloper: "DragonResonance"
+Developers:
+  - "DragonResonance"
+Publishers:
+  - "Praenaris"
+  - "DragonResonance"
+JobPosition: "Solo developer"
 
 Links: null
 ---

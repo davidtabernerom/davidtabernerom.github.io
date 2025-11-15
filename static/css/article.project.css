@@ -2,3 +2,86 @@ article#Project {
 	/*border: 3px dashed blue;*/
 }
 
+				article#Project  h2 {
+					line-height: 100%;
+					margin-bottom: 12px;
+				}
+
+				article#Project > ul {
+					column-gap: var(--content--block-separation-size);
+					display: flex;
+				}
+
+								article#Project > ul > li {
+									/*border: 3px dashed green;*/
+								}
+
+										article#Project > ul > li.Sheet {
+											flex: 1 1 auto;
+										}
+
+														article#Project > ul > li.Sheet > h2 {
+															margin-top: var(--content--section-separation-size);
+														}
+
+														article#Project > ul > li.Sheet > ul {
+															/*border: 3px dashed purple;*/
+															background-color: var(--general--foreground-color);
+															box-shadow: var(--main--box-shadow);
+														}
+
+														article#Project > ul > li.Sheet > ul {
+															/*border: 3px dashed purple;*/
+															background-color: var(--general--foreground-color);
+															box-shadow: var(--main--box-shadow);
+															padding: 16px;
+														}
+
+																		article#Project > ul > li.Sheet > ul > li {
+																			column-gap: 16px;
+																			display: grid;
+																			grid-template-columns: 160px 1fr;
+																			margin-bottom: 8px;
+																		}
+
+																				article#Project > ul > li.Sheet > ul > li:last-of-type {
+																					margin-bottom: 0;
+																				}
+
+																						article#Project > ul > li.Sheet > ul > li > .Key {
+																							/*border: 3px dashed lightcoral;*/
+																							font-family: "Archivo";
+																							font-size: 20px;
+																							font-variation-settings: "wdth" 65;
+																							line-height: 100%;
+																							text-align: right;
+																						}
+
+																						article#Project > ul > li.Sheet > ul > li > .Value {
+																							/*border: 3px dashed lightseagreen;*/
+																							text-align: left;
+																						}
+
+																										article#Project > ul > li.Sheet > ul > li > .Value > a {
+																											display: inline-block;
+																											height: 48px;
+																											margin-right: 8px;
+																										}
+
+																														article#Project > ul > li.Sheet > ul > li > .Value > a > img {
+																															filter: brightness(0);
+																															height: 100%;
+																															width: auto;
+																														}
+
+										article#Project > ul > li.Cover {
+											flex: 0 0 240px;
+										}
+
+														article#Project > ul > li.Cover > img {
+															box-shadow: var(--main--box-shadow);
+															display: block;
+															height: auto;
+															width: 100%;
+														}
+

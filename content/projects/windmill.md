@@ -10,11 +10,14 @@ InDevelopment: true
 CoverLink: "/img/no_cover.png"
 BannerLink: "/img/no_banner.png"
 ReleaseDate: 2026-12-31
-Developer: "Praenaris"
-Publisher: "Praenaris"
-Role: "Lead Programmer & Technical Manager"
+MainDeveloper: "Praenaris"
+Developers:
+  - "Praenaris"
+Publishers:
+  - "Praenaris"
+JobPosition: "Lead Programmer & Technical Manager"
 
 Links:
   - store: "Itchio"
-    url: "https://praenaris.itch.io/windmill"
+    link: "https://praenaris.itch.io/windmill"
 ---
