@@ -15,7 +15,6 @@ Developers:
   - "DragonResonance"
 Publishers:
   - "Praenaris"
-  - "DragonResonance"
 JobPosition: "Solo developer"
 
 Links:

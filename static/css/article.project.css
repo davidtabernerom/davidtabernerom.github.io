@@ -62,6 +62,11 @@ article#Project {
 																							text-align: left;
 																						}
 
+																								article#Project > ul > li.Sheet > ul > li.Highlighted > .Value {
+																									font-size: 18px;
+																									font-weight: 600;
+																								}
+
 																								article#Project > ul > li.Sheet > ul > li > a.Value {
 																									border-color: var(--general--background-color);
 																									border-radius: var(--content--border-radius);
@@ -80,16 +85,30 @@ article#Project {
 																									}
 
 																										article#Project > ul > li.Sheet > ul > li > .Value > a {
+																											border-color: var(--general--background-color);
+																											border-radius: var(--content--border-radius);
+																											border-style: solid;
+																											border-width: var(--content--link-border-width);
 																											display: inline-block;
-																											height: 48px;
-																											margin-right: 8px;
+																											height: 64px;
+																											margin-right: 4px;
+																											padding: 4px 8px;
 																										}
+
+																											article#Project > ul > li.Sheet > ul > li > .Value > a:hover {
+																												background-color: var(--general--accent-color);
+																												border-color: var(--general--accent-color);
+																											}
 
 																														article#Project > ul > li.Sheet > ul > li > .Value > a > img {
 																															filter: brightness(0);
 																															height: 100%;
 																															width: auto;
 																														}
+
+																															article#Project > ul > li.Sheet > ul > li > .Value > a:hover > img {
+																																filter: brightness(0) invert();
+																															}
 
 										article#Project > ul > li.Cover {
 											flex: 0 0 240px;

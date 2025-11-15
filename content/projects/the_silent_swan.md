@@ -15,7 +15,6 @@ Developers:
   - "Praenaris"
 Publishers:
   - "GammeraNest"
-  - "Praenaris"
 JobPosition: "Lead Programmer & Technical Manager"
 
 Links:
