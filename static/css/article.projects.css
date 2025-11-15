@@ -4,8 +4,13 @@ article#Projects {
 
 				article#Projects > h2 {
 					line-height: 100%;
-					margin-bottom: 12px;
+					margin-bottom: var(--content--block-separation-size);
+					margin-top: 60px;
 				}
+
+						article#Projects > h2:first-of-type {
+							margin-top: 0;
+						}
 
 				article#Projects > ul {
 					margin-bottom: var(--content--section-separation-size);
@@ -27,7 +32,7 @@ article#Projects {
 
 												article#Projects > ul > li > a {
 													/*background-image: linear-gradient(to left, var(--general--accent-color), rgba(0, 0, 0, 0.5) 50%);*/
-													border: 3px dashed orange;
+													/*border: 3px dashed orange;*/
 													display: block;
 													height: 100%;
 													width: 100%;
@@ -38,36 +43,38 @@ article#Projects {
 																}
 
 																				article#Projects > ul > li > a > ul > li {
-																					border: 3px dashed blueviolet;
+																					/*border: 3px dashed blueviolet;*/
 																				}
 
 																						article#Projects > ul > li > a > ul > li.Datetime {
 																							flex: 0 0 32px;
+																							margin-right: 2px;
 																							text-align: right;
 																						}
 
 																										article#Projects > ul > li > a > ul > li.Datetime  span {
 																											font-family: "Archivo";
 																											font-variation-settings: "wdth" 125;
-																											line-height: 100%;
+																											line-height: 85%;
 																											transform: rotate(180deg);
 																											vertical-align: text-bottom;
 																											writing-mode: vertical-rl;
 																										}
 
 																												article#Projects > ul > li > a > ul > li.Datetime > span {
-																													font-size: 16px;
-																													font-weight: 225;
+																													font-size: 20px;
+																													font-weight: 150;
 																												}
 
 																												article#Projects > ul > li > a > ul > li.Datetime > span > span {
-																													font-size: 24px;
+																													font-size: 32px;
 																													font-weight: 450;
 																													margin-top: 8px;
 																												}
 
 																						article#Projects > ul > li > a > ul > li.Cover {
 																							flex: 0 0 200px;
+																							z-index: 50;
 																						}
 
 																										article#Projects > ul > li > a > ul > li.Cover > img {
@@ -78,9 +85,57 @@ article#Projects {
 																										}
 
 																						article#Projects > ul > li > a > ul > li.Banner {
+																							align-self: self-end;
+																							box-shadow: var(--main--box-shadow);
 																							flex: 1 1 auto;
 																							height: 240px;
-																							align-self: self-end;
 																							margin-bottom: 16px;
+																							overflow: hidden;
+																							padding: 20px 32px;
+																							position: relative;
+																							z-index: 0;
 																						}
+
+																							article#Projects > ul > li > a:hover > ul > li.Banner {
+																								background-color: var(--general--accent-color);
+																								background-image: none !important;
+																							}
+
+																										article#Projects > ul > li > a > ul > li.Banner > div {
+																											background-color: var(--general--foreground-color);
+																											height: 52px;
+																											mask-position: right top;
+																											mask-repeat: no-repeat;
+																											mask-size: contain;
+																											position: absolute;
+																											right: 16px;
+																											top: 12px;
+																											width: 20%;
+																										}
+
+																										article#Projects > ul > li > a > ul > li.Banner > h4 {
+																											color: var(--general--foreground-color);
+																											overflow: hidden;
+																											text-overflow: ellipsis;
+																											text-transform: uppercase;
+																											white-space: nowrap;
+																											width: 75%;
+																										}
+
+																										article#Projects > ul > li > a > ul > li.Banner > p {
+																											color: var(--general--foreground-color);
+																											font-size: 20px;
+																											font-weight: 200;
+																											margin-top: 8px;
+																										}
+
+																										article#Projects > ul > li > a > ul > li.Banner > span {
+																											bottom: 20px;
+																											color: var(--general--foreground-color);
+																											display: block;
+																											font-size: 20px;
+																											font-weight: 400;
+																											position: absolute;
+																											right: 32px;
+																										}
 

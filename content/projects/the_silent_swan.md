@@ -4,6 +4,7 @@ Description: "The Silent Swan is a contemplative first-person narrative experien
 Date: 2021-09-24
 Draft: false
 
+ShortenedTitle: null
 Released: true
 InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1898880/library_600x900_2x.jpg"

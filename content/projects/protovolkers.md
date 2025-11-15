@@ -4,6 +4,7 @@ Description: "Winding tracks at high speed with the wildest cast of characters i
 Date: 2022-06-05
 Draft: false
 
+ShortenedTitle: null
 Released: false
 InDevelopment: true
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2944420/450f575d258a8e3b6d0a610980df0b1e979620d7/library_600x900_2x.jpg"

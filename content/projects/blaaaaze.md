@@ -4,6 +4,7 @@ Description: ""
 Date: 2025-06-13
 Draft: true
 
+ShortenedTitle: null
 Released: false
 InDevelopment: true
 CoverLink: "/img/no_cover.png"

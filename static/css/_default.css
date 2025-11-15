@@ -80,7 +80,10 @@ h3 {
 }
 
 h4 {
-	/**/
+	font-family: "Archivo";
+	font-size: 40px;
+	font-variation-settings: "wdth" 125;
+	font-weight: 900;
 }
 
 h5 {

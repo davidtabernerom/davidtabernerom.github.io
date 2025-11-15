@@ -4,6 +4,7 @@ Description: "One of Arima Lodge's bellhops rides the elevator for his usual shi
 Date: 2022-09-19
 Draft: false
 
+ShortenedTitle: null
 Released: true
 InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3310190/482e4cd06875d880dc0b55fd6c463286a12ee26c/library_600x900_2x.jpg"
