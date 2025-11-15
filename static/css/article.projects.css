@@ -103,13 +103,13 @@ article#Projects {
 
 																										article#Projects > ul > li > a > ul > li.Banner > div {
 																											background-color: var(--general--foreground-color);
-																											height: 52px;
+																											height: 48px;
 																											mask-position: right top;
 																											mask-repeat: no-repeat;
 																											mask-size: contain;
 																											position: absolute;
-																											right: 16px;
-																											top: 12px;
+																											right: 24px;
+																											top: 16px;
 																											width: 20%;
 																										}
 

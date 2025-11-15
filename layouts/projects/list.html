@@ -18,7 +18,7 @@
 						<div style="mask-image: url('{{ $developer.image }}');"></div>
 						<h4>{{ if .Params.ShortenedTitle }}{{ .Params.ShortenedTitle }}{{ else }}{{ .Title }}{{ end }}</h4>
 						<p>{{ .Params.Description }}</p>
-						<span>Worked as {{ .Params.Role }}</span>
+						<span>{{ .Params.Role }}</span>
 					</li>
 				</ul>
 			</a>
@@ -43,7 +43,7 @@
 						<div style="mask-image: url('{{ $developer.image }}');"></div>
 						<h4>{{ if .Params.ShortenedTitle }}{{ .Params.ShortenedTitle }}{{ else }}{{ .Title }}{{ end }}</h4>
 						<p>{{ .Params.Description }}</p>
-						<span>Worked as {{ .Params.Role }}</span>
+						<span>{{ .Params.Role }}</span>
 					</li>
 				</ul>
 			</a>
