@@ -11,7 +11,7 @@
 		{{ if .IsPage }}
 			<li class="Separator">/</li>
 			<li class="Breadcrumb">
-				<a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Title }}">{{ .Title }}</a>
+				<a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Title }}">{{ if .Params.ShortenedTitle }}{{ .Params.ShortenedTitle }}{{ else }}{{ .Title }}{{ end }}</a>
 			</li>
 		{{ end }}
 	</ul>
