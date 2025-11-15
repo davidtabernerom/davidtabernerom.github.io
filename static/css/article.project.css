@@ -62,6 +62,23 @@ article#Project {
 																							text-align: left;
 																						}
 
+																								article#Project > ul > li.Sheet > ul > li > a.Value {
+																									border-color: var(--general--background-color);
+																									border-radius: var(--content--border-radius);
+																									border-style: solid;
+																									border-width: var(--content--link-border-width);
+																									display: inline;
+																									font-size: 16px;
+																									justify-self: self-start;
+																									padding: 4px 8px;
+																								}
+
+																									article#Project > ul > li.Sheet > ul > li > a.Value:hover {
+																										background-color: var(--general--accent-color);
+																										border-color: var(--general--accent-color);
+																										color: var(--general--foreground-color);
+																									}
+
 																										article#Project > ul > li.Sheet > ul > li > .Value > a {
 																											display: inline-block;
 																											height: 48px;
