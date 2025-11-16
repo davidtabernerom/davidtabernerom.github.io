@@ -2,7 +2,7 @@
 Title: "Windmill"
 Description: "(Coming soon)"
 Date: 2025-06-26
-Draft: false
+Draft: true
 
 ShortenedTitle: null
 Released: false
