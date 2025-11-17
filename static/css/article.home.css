@@ -49,11 +49,11 @@ article#Home {
 												}
 
 														article#Home > ul > li.Unreleased > a {
-															background-image: linear-gradient(to bottom, transparent, var(--general--foreground-color) 160%);
+															background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 160%);
 														}
 
 														article#Home > ul > li.Released > a {
-															background-image: linear-gradient(to bottom, transparent, var(--general--foreground-color) 80%);
+															background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), var(--general--foreground-color) 80%);
 														}
 
 													article#Home > ul > li > a:hover {
