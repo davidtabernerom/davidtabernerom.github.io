@@ -3,7 +3,6 @@ main {
 	background-color: var(--general--background-color);
 	box-shadow: inset var(--main--box-shadow);
 	margin-left: var(--navigation--sidebar-width);
-	padding-bottom: var(--copyright--bar-height);
 	padding-top: var(--navigation--topbar-height);
 	width: 100%;
 }
