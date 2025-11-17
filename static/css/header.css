@@ -1,8 +1,8 @@
 header {
 	background-color: var(--general--foreground-color);
 	box-shadow: var(--main--box-shadow);
-	height: var(--navigation--topbar--height);
-	left: var(--navigation--sidebar--width);
+	height: var(--navigation--topbar-height);
+	left: var(--navigation--sidebar-width);
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -14,7 +14,7 @@ header {
 					display: flex;
 					height: 100%;
 					justify-content: center;
-					padding-bottom: 24px;
+					padding-bottom: var(--navigation--padding-bottom);
 				}
 
 								header > ul#Breadcrumbs > li {

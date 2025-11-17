@@ -3,15 +3,16 @@ nav {
 	height: 100%;
 	position: fixed;
 	text-align: center;
-	width: var(--navigation--sidebar--width);
+	width: var(--navigation--sidebar-width);
 }
 
 				nav > div#Logo {
 					/*border: 3px dashed greenyellow;*/
-					align-items: center;
+					align-items: end;
 					display: flex;
-					height: var(--navigation--sidebar--width);
+					height: var(--navigation--topbar-height);
 					justify-content: center;
+					padding-bottom: var(--navigation--padding-bottom);
 					width: 100%;
 				}
 
@@ -34,10 +35,14 @@ nav {
 															margin-left: -0.5ch;
 														}
 
+												nav > div#Logo > a > img {
+													display: block;
+												}
+
 				nav > ul {
 					/*border: 3px dashed greenyellow;*/
 					display: inline-block;
-					margin-top: 4px;
+					margin-top: 16px;
 					text-align: left;
 				}
 
