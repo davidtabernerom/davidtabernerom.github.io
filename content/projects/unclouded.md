@@ -1,9 +1,10 @@
 ---
-Title: "Windmill"
+Title: "Unclouded"
 Description: "(Coming soon)"
 Date: 2025-06-26
 Draft: true
 
+ProjectTitle: "Windmill"
 ShortenedTitle: null
 Released: false
 InDevelopment: true

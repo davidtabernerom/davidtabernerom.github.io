@@ -4,6 +4,7 @@ Description: "FallNation: Lost Stories is a procedurally generated first-person 
 Date: 2024-01-08
 Draft: false
 
+ProjectTitle: null
 ShortenedTitle: "FN: Lost Stories"
 Released: true
 InDevelopment: false
