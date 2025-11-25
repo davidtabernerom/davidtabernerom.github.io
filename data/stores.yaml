@@ -1,14 +1,6 @@
-PlayStation:
-  name: "PlayStation Store"
-  image: "/img/stores/psstore.svg"
-
-Steam:
-  name: "Steam"
-  image: "/img/stores/steam.svg"
-
-Itchio:
-  name: "itch.io"
-  image: "/img/stores/itchio.svg"
+Amazon:
+  name: "Amazon"
+  image: "/img/stores/amazon.svg"
 
 EpicGames:
   name: "Epic Games Store"
@@ -17,3 +9,15 @@ EpicGames:
 GOG:
   name: "GOG"
   image: "/img/stores/gog.svg"
+
+Itchio:
+  name: "itch.io"
+  image: "/img/stores/itchio.svg"
+
+PlayStation:
+  name: "PlayStation Store"
+  image: "/img/stores/psstore.svg"
+
+Steam:
+  name: "Steam"
+  image: "/img/stores/steam.svg"
