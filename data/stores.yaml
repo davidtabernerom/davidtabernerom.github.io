@@ -1,24 +1,19 @@
 PlayStation:
   name: "PlayStation Store"
-  image: "/img/icons/playstation.svg"
-  color: "#003087"
+  image: "/img/stores/psstore.svg"
 
 Steam:
   name: "Steam"
-  image: "/img/icons/steam.svg"
-  color: "#1b2838"
+  image: "/img/stores/steam.svg"
 
 Itchio:
   name: "itch.io"
-  image: "/img/icons/itchio.svg"
-  color: "#fa5c5c"
+  image: "/img/stores/itchio.svg"
 
 EpicGames:
   name: "Epic Games Store"
-  image: "/img/icons/epicgames.svg"
-  color: "#000000"
+  image: "/img/stores/epicgames.svg"
 
 GOG:
   name: "GOG"
-  image: "/img/icons/gog.svg"
-  color: "#86328a"
+  image: "/img/stores/gog.svg"

@@ -64,15 +64,13 @@
 
 			<h2>Links</h2>
 			<ul>
-			{{ with .Params.Links }}
-			{{ range . }}
+				{{ with .Params.Links }}{{ range . }}
 				{{ $store := index site.Data.stores .store }}
 				<li>
 					<div class="Key">{{ $store.name }}</div>
 					<a class="Value" target="_blank" href="{{ .link }}">{{ .link }}</a>
 				</li>
-			{{ end }}
-			{{ end }}
+				{{ end }}{{ end }}
 			</ul>
 		</li>
 
