@@ -3,7 +3,9 @@
 #
 # One-time setup in the GitHub repository:
 #   Settings > Pages > Build and deployment > Source: "GitHub Actions"
-#   Settings > Pages > Custom domain: tabernero.dev (and enable "Enforce HTTPS")
+#   Settings > Pages > Custom domain: leave empty to serve at https://davidtabernerom.github.io/,
+#     or set tabernero.dev (and enable "Enforce HTTPS") once DNS points to GitHub.
+#   The baseURL comes from the Pages settings at build time, so hugo.toml needs no change.
 name: Pages
 
 on:
