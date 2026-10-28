@@ -1,0 +1,424 @@
+/*                                                                                */
+/*        Responsive overrides — must be linked last in partials/head.html        */
+/*                                                                                */
+
+
+
+
+/* Tablet: keep the sidebar layout, tighten the margins */
+
+@media (max-width: 1100px) {
+
+	:root {
+		--content--side-margin: 40px;
+	}
+
+	main {
+		min-width: 0;
+	}
+
+	article {
+		margin-left: var(--content--side-margin);
+	}
+
+	article#Contact > ul > li {
+		max-width: 100%;
+	}
+
+	article#Project > ul > li.Sheet,
+	article#Projects > ul > li > a > ul > li.Banner {
+		min-width: 0;
+	}
+
+	article#Project > ul > li.Sheet > ul > li > a.Value {
+		overflow-wrap: anywhere;
+	}
+
+	article#Projects > ul > li > a > ul > li.Banner > p {
+		display: -webkit-box;
+		line-clamp: 3;
+		overflow: hidden;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+	}
+
+}
+
+
+
+
+/* Mobile: sidebar becomes a top bar, single column content */
+
+@media (max-width: 800px) {
+
+	:root {
+		--content--block-padding: 16px;
+		--content--block-separation-size: 16px;
+		--content--section-separation-size: 32px;
+		--content--side-margin: 16px;
+		--navigation--padding-bottom: 12px;
+	}
+
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 26px;
+	}
+
+	h4 {
+		font-size: 28px;
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+
+	h6 {
+		font-size: 18px;
+	}
+
+
+	body {
+		flex-direction: column;
+	}
+
+	main {
+		margin-left: 0;
+		padding-top: 0;
+	}
+
+
+	nav {
+		align-items: center;
+		box-shadow: var(--main--box-shadow);
+		display: grid;
+		grid-template-areas:
+			"logo cv"
+			"menu menu";
+		grid-template-columns: auto 1fr;
+		height: auto;
+		padding: 12px var(--content--side-margin) 8px;
+		position: sticky;
+		row-gap: 8px;
+		top: 0;
+		width: 100%;
+		z-index: 200;
+	}
+
+					nav > div#Logo {
+						grid-area: logo;
+						height: auto;
+						justify-content: start;
+						padding-bottom: 0;
+						width: auto;
+					}
+
+									nav > div#Logo > a > img {
+										height: 40px;
+										width: auto;
+									}
+
+					nav > ul {
+						display: flex;
+						grid-area: menu;
+						justify-content: space-between;
+						margin-top: 0;
+					}
+
+									nav > ul > li {
+										margin-bottom: 0;
+									}
+
+													nav > ul > li > a {
+														font-size: 16px;
+														padding-left: 4px;
+														padding-right: 4px;
+													}
+
+					nav > div#CV {
+						grid-area: cv;
+						position: static;
+						text-align: right;
+					}
+
+									nav > div#CV > a {
+										font-size: 14px;
+									}
+
+
+	header {
+		height: auto;
+		left: 0;
+		position: static;
+	}
+
+					header > ul#Breadcrumbs {
+						align-items: baseline;
+						flex-wrap: wrap;
+						padding: 16px var(--content--side-margin);
+						row-gap: 4px;
+					}
+
+									header > ul#Breadcrumbs > li {
+										line-height: 1.2;
+									}
+
+									header > ul#Breadcrumbs > li.Separator {
+										font-size: 16px;
+									}
+
+									header > ul#Breadcrumbs > li.Breadcrumb > a {
+										font-size: 18px;
+										padding: 0 4px;
+									}
+
+									header > ul#Breadcrumbs > li.Breadcrumb:last-of-type > a {
+										font-size: 28px;
+										padding: 0 6px;
+									}
+
+
+	article {
+		margin-left: 0;
+		max-width: none;
+		min-height: auto;
+		padding: 32px var(--content--side-margin) 48px;
+		width: 100%;
+	}
+
+
+	footer > span {
+		height: auto;
+		line-height: 1.4;
+		padding: 8px var(--content--side-margin);
+		text-align: center;
+	}
+
+
+	/* Home */
+
+	article#Home > ul {
+		grid-template-columns: 1fr;
+	}
+
+					article#Home > ul > li {
+						grid-column: 1 / -1 !important; /* overrides the inline spans in index.html */
+					}
+
+					article#Home > ul > li.Title:nth-child(2) {
+						margin-top: 16px;
+						order: 1;
+					}
+
+					article#Home > ul > li#Presentation {
+						order: 0;
+					}
+
+					article#Home > ul > li.Game.Unreleased {
+						order: 2;
+					}
+
+									article#Home > ul > li#Presentation > a {
+										padding: 28px 24px 32px;
+									}
+
+													article#Home > ul > li#Presentation > a > p {
+														font-size: 20px;
+													}
+
+									article#Home > ul > li.Game > a > img {
+										margin-left: auto;
+										margin-right: auto;
+										max-width: 280px;
+									}
+
+													article#Home > ul > li#MoreProjects > a > p {
+														font-size: 20px;
+														text-align: center;
+														text-indent: 0;
+													}
+
+
+	/* About */
+
+	article#About > ul {
+		padding: 20px;
+	}
+
+					article#About > ul#Presentation {
+						align-items: stretch;
+						flex-direction: column;
+						gap: 20px;
+						padding: 24px;
+					}
+
+									article#About > ul#Presentation > li:first-child {
+										align-self: center;
+										flex: 0 0 auto;
+										max-width: 280px;
+										width: 100%;
+									}
+
+													article#About > ul#Presentation > li:last-child > p {
+														font-size: 18px;
+													}
+
+														article#About > ul#Presentation > li:last-child > p:first-of-type {
+															font-size: 22px;
+														}
+
+					article#About > ul.Qualification {
+						align-items: center;
+						column-gap: 16px;
+						grid-template-columns: auto 1fr;
+						row-gap: 12px;
+					}
+
+									article#About > ul.Qualification > li:nth-child(3) {
+										grid-column: 1 / -1;
+									}
+
+													article#About > ul.Qualification > li > img {
+														max-height: 40px;
+													}
+
+
+	/* Projects */
+
+	article#Projects > h2 {
+		margin-top: 40px;
+	}
+
+									article#Projects > ul > li > a > ul > li.Datetime {
+										flex: 0 0 22px;
+									}
+
+													article#Projects > ul > li > a > ul > li.Datetime > span {
+														font-size: 14px;
+													}
+
+													article#Projects > ul > li > a > ul > li.Datetime > span > span {
+														font-size: 22px;
+														margin-top: 4px;
+													}
+
+									article#Projects > ul > li > a > ul > li.Cover {
+										flex: 0 0 96px;
+									}
+
+									article#Projects > ul > li > a > ul > li.Banner {
+										height: 128px;
+										margin-bottom: 8px;
+										min-width: 0;
+										padding: 10px 12px;
+									}
+
+													article#Projects > ul > li > a > ul > li.Banner > div {
+														height: 24px;
+														right: 10px;
+														top: 10px;
+														width: 25%;
+													}
+
+													article#Projects > ul > li > a > ul > li.Banner > h4 {
+														display: -webkit-box;
+														font-size: 18px;
+														line-clamp: 2;
+														line-height: 1.1;
+														white-space: normal;
+														width: 72%;
+														-webkit-box-orient: vertical;
+														-webkit-line-clamp: 2;
+													}
+
+													article#Projects > ul > li > a > ul > li.Banner > p {
+														display: -webkit-box;
+														font-size: 14px;
+														line-clamp: 1;
+														margin-top: 4px;
+														overflow: hidden;
+														text-indent: 0;
+														-webkit-box-orient: vertical;
+														-webkit-line-clamp: 1;
+													}
+
+													article#Projects > ul > li > a > ul > li.Banner > span {
+														bottom: 8px;
+														font-size: 13px;
+														left: 12px;
+														overflow: hidden;
+														right: 12px;
+														text-align: right;
+														text-overflow: ellipsis;
+														white-space: nowrap;
+													}
+
+
+	/* Project */
+
+	article#Project > ul {
+		flex-direction: column-reverse;
+		row-gap: var(--content--section-separation-size);
+	}
+
+					article#Project > ul > li.Cover {
+						align-self: center;
+						flex: 0 0 auto;
+						max-width: 240px;
+						width: 70%;
+					}
+
+									article#Project > ul > li.Sheet > ul > li {
+										grid-template-columns: 1fr;
+										margin-bottom: 12px;
+										row-gap: 4px;
+									}
+
+													article#Project > ul > li.Sheet > ul > li > .Key {
+														font-size: 16px;
+														opacity: 0.6;
+														text-align: left;
+													}
+
+													article#Project > ul > li.Sheet > ul > li > a.Value {
+														overflow-wrap: anywhere;
+													}
+
+													article#Project > ul > li.Sheet > ul > li > .Value > a {
+														height: 52px;
+														margin-bottom: 4px;
+													}
+
+
+	/* Contact */
+
+	article#Contact > ul > li {
+		height: 64px;
+		width: 100%;
+	}
+
+					article#Contact > ul > li > a {
+						column-gap: 16px;
+						padding-left: 16px;
+						padding-right: 16px;
+					}
+
+									article#Contact > ul > li > a > div {
+										flex: 0 0 auto;
+										height: 28px;
+									}
+
+									article#Contact > ul > li > a > span {
+										font-size: 20px;
+										min-width: 0;
+										overflow-wrap: anywhere;
+									}
+
+}

@@ -53,7 +53,7 @@ layouts/
   partials/               head, nav (logo, menu, CV links), header (breadcrumbs), footer, datatags
 static/
   css/                    One file per area: _default (vars/reset), body, nav, main, header,
-                          footer, article, article.<page> — all linked in partials/head.html
+                          footer, article, article.<page>, mobile — all linked in partials/head.html
   img/                    logo, selfie, placeholders (no_cover/no_banner), qualifications/,
                           socials/, stores/, studios/
   files/                  curriculum_vitae_english.pdf, curriculum_vitae_spanish.pdf
@@ -93,6 +93,7 @@ Adding a studio or store means adding an entry in the matching data file plus it
 - CSS custom properties defined in `static/css/_default.css` with `--area--property` naming (e.g. `--general--accent-color`, `--content--block-padding`). Reuse them instead of hardcoding values.
 - HTML ids/classes are PascalCase (`#Home`, `.Game`, `.Released`, `.Highlighted`).
 - New CSS files must be linked manually in `layouts/partials/head.html`.
+- Responsive rules live only in `static/css/mobile.css` (linked last): `max-width: 1100px` = tablet (sidebar kept, tighter margins), `max-width: 800px` = mobile (sidebar becomes a sticky top bar, single column). When changing desktop styles, check whether the mobile overrides need updating too.
 - Site copy is in English; qualification data is in Spanish (official names).
 - Keep it dependency-free: no npm, no Hugo modules/themes unless asked.
 
