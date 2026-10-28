@@ -2,7 +2,7 @@
 Title: "Unclouded"
 Description: "(Coming soon)"
 Date: 2025-06-26
-Draft: true
+Draft: false
 
 ProjectTitle: "Windmill"
 ShortenedTitle: null
@@ -19,6 +19,8 @@ Publishers:
 JobPosition: "Lead Programmer & Technical Manager"
 
 Links:
+  - store: "Steam"
+    link: "https://store.steampowered.com/app/4414700/Unclouded/"
   - store: "Itchio"
     link: "https://praenaris.itch.io/windmill"
 ---
