@@ -23,7 +23,7 @@ Personal portfolio website of David Tabernero Mateo (game developer / technical 
 - Plain JS in `static/js/`; only third-party lib is `vanilla-tilt.min.js` (tilt effect, currently mostly commented out in templates).
 - Fonts from Google Fonts: Archivo, Inter (default), JetBrains Mono.
 - Build: `hugo` (output to `public/`, git-ignored). Local preview: `hugo server`. Hugo is not preinstalled in cloud containers.
-- CI: `.gitlab-ci.yml` (GitLab Pages, `hugo_extended` image) — `test` job builds on non-default branches, `pages` job deploys on the default branch.
+- CI: `.gitlab-ci.yml` (GitLab Pages, `hugo_extended` image) — `test` job builds on non-default branches, `pages` job deploys on the default branch. `.github/workflows/pages.yml` does the same for GitHub Pages (remote `github` → `davidtabernerom.github.io`).
 - `.gitattributes` is a Unity-oriented template (the user works mainly in C#/Unity); it's irrelevant to the site but leave it alone.
 
 ## Structure
