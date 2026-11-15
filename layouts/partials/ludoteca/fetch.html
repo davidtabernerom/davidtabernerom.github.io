@@ -1,0 +1,27 @@
+{{- /*
+	Returns the ludoteca.dev record (https://ludoteca.dev/api) for the given id ("LDT-23100"),
+	or an empty dict when there is no id, the request fails or the record isn't ready yet.
+	Call it through partialCached with the id as the variant so each game is fetched once per build.
+*/ -}}
+{{- $data := dict -}}
+{{- with . -}}
+	{{- $url := printf "https://ludoteca.dev/api/v1/id/%s" . -}}
+	{{- with try (resources.GetRemote $url (dict "headers" (dict "Accept" "application/json"))) -}}
+		{{- if .Err -}}
+			{{- warnf "ludoteca: %s: %s" $url .Err -}}
+		{{- else -}}
+			{{- with .Value -}}
+				{{- with try (transform.Unmarshal .) -}}
+					{{- if .Err -}}
+						{{- warnf "ludoteca: %s: %s" $url .Err -}}
+					{{- else if .Value.id -}}
+						{{- $data = .Value -}}
+					{{- end -}}
+				{{- end -}}
+			{{- else -}}
+				{{- warnf "ludoteca: %s: not found" $url -}}
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+{{- return $data -}}

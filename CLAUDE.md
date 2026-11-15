@@ -34,33 +34,33 @@ archetypes/default.md     TOML front matter template
 content/
   _index.md               Home       (menu weight 1)
   about/_index.md         About Me   (menu weight 2)
-  projects/_index.md      Projects   (menu weight 6)
-  projects/*.md           One file per game project (YAML front matter, no body)
+  games/_index.md         Games      (menu weight 6; alias /projects/)
+  games/*.md              One file per game (YAML front matter, no body; Aliases keep old /projects/ URLs)
   contact/_index.md       Contact    (menu weight 9)
 data/
   qualifications.yaml     Education/certifications list (rendered on About)
   socials.yaml            Social links (rendered on Contact, icons via CSS mask)
-  stores.yaml             Store key -> {name, image}   (used by project Links)
+  stores.yaml             Store key -> {name, image}   (used by game Links)
   studios.yaml            Studio key -> {name, image, link} (developers/publishers)
   datatags/tilt.yaml      data-* attrs for vanilla-tilt, emitted via partials/datatags.html
 layouts/
   _default/baseof.html    Shell: head, nav, main > header + "article" block + footer
   index.html              Home: presentation, next in-development project, 3 latest releases
   about/list.html         Selfie, bio text, qualifications
-  projects/list.html      Upcoming (InDevelopment) and Released lists
-  projects/single.html    Project sheet: details, studios, position, store links, cover
+  games/list.html         Upcoming (InDevelopment) and Released lists
+  games/single.html       Game sheet: details, studios, position, store links, cover
   contact/list.html       Social network links
   partials/               head, nav (logo, menu, CV links), header (breadcrumbs), footer, datatags
 static/
   css/                    One file per area: _default (vars/reset), body, nav, main, header,
-                          footer, article, article.<page>, mobile — all linked in partials/head.html
+                          footer, article, article.<page> (home/about/games/game/contact), mobile — all linked in partials/head.html
   img/                    logo, selfie, placeholders (no_cover/no_banner), qualifications/,
                           socials/, stores/, studios/
   files/                  curriculum_vitae_english.pdf, curriculum_vitae_spanish.pdf
   js/                     main.js (empty), lib/vanilla-tilt.min.js
 ```
 
-## Project content schema (`content/projects/*.md`)
+## Game content schema (`content/games/*.md`)
 
 YAML front matter, PascalCase keys:
 
@@ -71,11 +71,13 @@ Date: 2021-09-24            # start date of my involvement
 Draft: false
 ProjectTitle: "Codename"     # internal/working title
 ShortenedTitle: null         # optional short name for breadcrumbs/lists
-Released: true               # -> "Released Projects" / home "Latest Releases"
-InDevelopment: false         # -> "Upcoming Projects" / home "Next Project"
+Ludoteca: "LDT-23100"        # optional ludoteca.dev id, see below
+Aliases: ["/projects/x/"]    # old URL, kept so existing links redirect
+Released: true               # -> "Released Games" / home "Latest Releases"
+InDevelopment: false         # -> "Upcoming Games" / home "Next Game"
 CoverLink: "..."             # portrait cover (Steam library_600x900 or /img/no_cover.png)
 BannerLink: "..."            # wide hero (Steam library_hero or /img/no_banner.png)
-ReleaseDate: 2023-11-02      # used for sorting
+ReleaseDate: 2023-11-02      # release or early access launch, whichever comes first; used for sorting
 MainDeveloper: "Praenaris"   # key in data/studios.yaml
 Developers: ["Praenaris"]    # keys in data/studios.yaml
 Publishers: ["GammeraNest"]  # keys in data/studios.yaml
@@ -86,6 +88,15 @@ Links:
 ```
 
 Adding a studio or store means adding an entry in the matching data file plus its image under `static/img/studios/` or `static/img/stores/`.
+
+### ludoteca.dev data
+
+Games with a `Ludoteca` id are fetched at build time from the public API (`https://ludoteca.dev/api/v1/id/<id>`, no key, 60 req/min, ODbL data) by `partials/ludoteca/fetch.html`. `partials/game-info.html` merges it with the front matter. Templates read the game's status, year, date and links from it, and `partials/games.html` filters and sorts the game lists with it.
+- From the API: release status (`lanzamiento.proximamente` overrides `Released`/`InDevelopment`), the release date when it's an exact day (`partials/ludoteca/date.html` parses "10 DIC 2024"), otherwise the year (`ano`), and extra store links missing from `Links`.
+- From the front matter: everything else. API descriptions are Spanish and its images are lower resolution, so they aren't used. Local `Links` win over API links for the same store.
+- If a request fails or the id is wrong, Hugo prints a warning and the build uses the front matter. Responses are cached for 1h (`[caches.getresource]` in `hugo.toml`).
+- The game sheet credits ludoteca.dev (ODbL) with a link to the game's ludoteca page.
+- Finding an id: `https://ludoteca.dev/api/v1/steam?appids=<appid>` (doesn't create records). `/steam/<appid>` imports a missing game, which creates a record on their side, so only do that if the user asks.
 
 ## Conventions
 

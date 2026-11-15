@@ -1,36 +1,36 @@
-article#Projects {
+article#Games {
 	/*border: 3px dashed blue;*/
 }
 
-				article#Projects > h2 {
+				article#Games > h2 {
 					line-height: 100%;
 					margin-bottom: var(--content--block-separation-size);
 					margin-top: 60px;
 				}
 
-						article#Projects > h2:first-of-type {
+						article#Games > h2:first-of-type {
 							margin-top: 0;
 						}
 
-				article#Projects > ul {
+				article#Games > ul {
 					margin-bottom: var(--content--section-separation-size);
 				}
 
-						article#Projects > ul:last-of-type {
+						article#Games > ul:last-of-type {
 							margin-bottom: 0;
 						}
 
-								article#Projects > ul > li {
+								article#Games > ul > li {
 									/*background-color: var(--general--foreground-color);*/
 									/*box-shadow: var(--main--box-shadow);*/
 									margin-bottom: var(--content--block-separation-size);
 								}
 
-										article#Projects > ul > li:last-of-type {
+										article#Games > ul > li:last-of-type {
 											margin-bottom: 0;
 										}
 
-												article#Projects > ul > li > a {
+												article#Games > ul > li > a {
 													/*background-image: linear-gradient(to left, var(--general--accent-color), rgba(0, 0, 0, 0.5) 50%);*/
 													/*border: 3px dashed orange;*/
 													display: block;
@@ -38,21 +38,21 @@ article#Projects {
 													width: 100%;
 												}
 
-																article#Projects > ul > li > a > ul {
+																article#Games > ul > li > a > ul {
 																	display: flex;
 																}
 
-																				article#Projects > ul > li > a > ul > li {
+																				article#Games > ul > li > a > ul > li {
 																					/*border: 3px dashed blueviolet;*/
 																				}
 
-																						article#Projects > ul > li > a > ul > li.Datetime {
+																						article#Games > ul > li > a > ul > li.Datetime {
 																							flex: 0 0 32px;
 																							margin-right: 2px;
 																							text-align: right;
 																						}
 
-																										article#Projects > ul > li > a > ul > li.Datetime  span {
+																										article#Games > ul > li > a > ul > li.Datetime  span {
 																											font-family: "Archivo";
 																											font-variation-settings: "wdth" 125;
 																											line-height: 85%;
@@ -61,30 +61,30 @@ article#Projects {
 																											writing-mode: vertical-rl;
 																										}
 
-																												article#Projects > ul > li > a > ul > li.Datetime > span {
+																												article#Games > ul > li > a > ul > li.Datetime > span {
 																													font-size: 20px;
 																													font-weight: 150;
 																												}
 
-																												article#Projects > ul > li > a > ul > li.Datetime > span > span {
+																												article#Games > ul > li > a > ul > li.Datetime > span > span {
 																													font-size: 32px;
 																													font-weight: 450;
 																													margin-top: 8px;
 																												}
 
-																						article#Projects > ul > li > a > ul > li.Cover {
+																						article#Games > ul > li > a > ul > li.Cover {
 																							flex: 0 0 200px;
 																							z-index: 50;
 																						}
 
-																										article#Projects > ul > li > a > ul > li.Cover > img {
+																										article#Games > ul > li > a > ul > li.Cover > img {
 																											box-shadow: var(--main--box-shadow);
 																											display: block;
 																											height: auto;
 																											width: 100%;
 																										}
 
-																						article#Projects > ul > li > a > ul > li.Banner {
+																						article#Games > ul > li > a > ul > li.Banner {
 																							align-self: self-end;
 																							background-position: center;
 																							background-repeat: no-repeat;
@@ -99,12 +99,12 @@ article#Projects {
 																							z-index: 0;
 																						}
 
-																							article#Projects > ul > li > a:hover > ul > li.Banner {
+																							article#Games > ul > li > a:hover > ul > li.Banner {
 																								background-color: var(--general--accent-color);
 																								background-image: none !important;
 																							}
 
-																										article#Projects > ul > li > a > ul > li.Banner > div {
+																										article#Games > ul > li > a > ul > li.Banner > div {
 																											background-color: var(--general--foreground-color);
 																											height: 48px;
 																											mask-position: right top;
@@ -116,7 +116,7 @@ article#Projects {
 																											width: 20%;
 																										}
 
-																										article#Projects > ul > li > a > ul > li.Banner > h4 {
+																										article#Games > ul > li > a > ul > li.Banner > h4 {
 																											color: var(--general--foreground-color);
 																											overflow: hidden;
 																											text-overflow: ellipsis;
@@ -125,14 +125,14 @@ article#Projects {
 																											width: 75%;
 																										}
 
-																										article#Projects > ul > li > a > ul > li.Banner > p {
+																										article#Games > ul > li > a > ul > li.Banner > p {
 																											color: var(--general--foreground-color);
 																											font-size: 20px;
 																											font-weight: 200;
 																											margin-top: 8px;
 																										}
 
-																										article#Projects > ul > li > a > ul > li.Banner > span {
+																										article#Games > ul > li > a > ul > li.Banner > span {
 																											bottom: 20px;
 																											color: var(--general--foreground-color);
 																											display: block;

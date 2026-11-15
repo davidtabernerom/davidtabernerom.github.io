@@ -3,6 +3,7 @@ Title: "Blaaaaze"
 Description: ""
 Date: 2025-06-13
 Draft: true
+Aliases: ["/projects/blaaaaze/"]
 
 ProjectTitle: null
 ShortenedTitle: null

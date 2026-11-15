@@ -25,16 +25,16 @@
 		max-width: 100%;
 	}
 
-	article#Project > ul > li.Sheet,
-	article#Projects > ul > li > a > ul > li.Banner {
+	article#Game > ul > li.Sheet,
+	article#Games > ul > li > a > ul > li.Banner {
 		min-width: 0;
 	}
 
-	article#Project > ul > li.Sheet > ul > li > a.Value {
+	article#Game > ul > li.Sheet > ul > li > a.Value {
 		overflow-wrap: anywhere;
 	}
 
-	article#Projects > ul > li > a > ul > li.Banner > p {
+	article#Games > ul > li > a > ul > li.Banner > p {
 		display: -webkit-box;
 		line-clamp: 3;
 		overflow: hidden;
@@ -239,7 +239,7 @@
 										max-width: 280px;
 									}
 
-													article#Home > ul > li#MoreProjects > a > p {
+													article#Home > ul > li#MoreGames > a > p {
 														font-size: 20px;
 														text-align: center;
 														text-indent: 0;
@@ -290,44 +290,44 @@
 													}
 
 
-	/* Projects */
+	/* Games */
 
-	article#Projects > h2 {
+	article#Games > h2 {
 		margin-top: 40px;
 	}
 
-									article#Projects > ul > li > a > ul > li.Datetime {
+									article#Games > ul > li > a > ul > li.Datetime {
 										flex: 0 0 22px;
 									}
 
-													article#Projects > ul > li > a > ul > li.Datetime > span {
+													article#Games > ul > li > a > ul > li.Datetime > span {
 														font-size: 14px;
 													}
 
-													article#Projects > ul > li > a > ul > li.Datetime > span > span {
+													article#Games > ul > li > a > ul > li.Datetime > span > span {
 														font-size: 22px;
 														margin-top: 4px;
 													}
 
-									article#Projects > ul > li > a > ul > li.Cover {
+									article#Games > ul > li > a > ul > li.Cover {
 										flex: 0 0 96px;
 									}
 
-									article#Projects > ul > li > a > ul > li.Banner {
+									article#Games > ul > li > a > ul > li.Banner {
 										height: 128px;
 										margin-bottom: 8px;
 										min-width: 0;
 										padding: 10px 12px;
 									}
 
-													article#Projects > ul > li > a > ul > li.Banner > div {
+													article#Games > ul > li > a > ul > li.Banner > div {
 														height: 24px;
 														right: 10px;
 														top: 10px;
 														width: 25%;
 													}
 
-													article#Projects > ul > li > a > ul > li.Banner > h4 {
+													article#Games > ul > li > a > ul > li.Banner > h4 {
 														display: -webkit-box;
 														font-size: 18px;
 														line-clamp: 2;
@@ -338,7 +338,7 @@
 														-webkit-line-clamp: 2;
 													}
 
-													article#Projects > ul > li > a > ul > li.Banner > p {
+													article#Games > ul > li > a > ul > li.Banner > p {
 														display: -webkit-box;
 														font-size: 14px;
 														line-clamp: 1;
@@ -349,7 +349,7 @@
 														-webkit-line-clamp: 1;
 													}
 
-													article#Projects > ul > li > a > ul > li.Banner > span {
+													article#Games > ul > li > a > ul > li.Banner > span {
 														bottom: 8px;
 														font-size: 13px;
 														left: 12px;
@@ -361,37 +361,37 @@
 													}
 
 
-	/* Project */
+	/* Game */
 
-	article#Project > ul {
+	article#Game > ul {
 		flex-direction: column-reverse;
 		row-gap: var(--content--section-separation-size);
 	}
 
-					article#Project > ul > li.Cover {
+					article#Game > ul > li.Cover {
 						align-self: center;
 						flex: 0 0 auto;
 						max-width: 240px;
 						width: 70%;
 					}
 
-									article#Project > ul > li.Sheet > ul > li {
+									article#Game > ul > li.Sheet > ul > li {
 										grid-template-columns: 1fr;
 										margin-bottom: 12px;
 										row-gap: 4px;
 									}
 
-													article#Project > ul > li.Sheet > ul > li > .Key {
+													article#Game > ul > li.Sheet > ul > li > .Key {
 														font-size: 16px;
 														opacity: 0.6;
 														text-align: left;
 													}
 
-													article#Project > ul > li.Sheet > ul > li > a.Value {
+													article#Game > ul > li.Sheet > ul > li > a.Value {
 														overflow-wrap: anywhere;
 													}
 
-													article#Project > ul > li.Sheet > ul > li > .Value > a {
+													article#Game > ul > li.Sheet > ul > li > .Value > a {
 														height: 52px;
 														margin-bottom: 4px;
 													}

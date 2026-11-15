@@ -1,11 +1,13 @@
 ---
 Title: "FallNation: Lost Stories"
-Description: "FallNation: Lost Stories is a procedurally generated first-person roguelike filled with handcrafted locations, powerful upgrades, and an evolving storyline. Discover deeper questions about the fate of humanity in the cosmos, dive into the adventure and discover what lies beyond!"
+Description: "Delve into the depths of an abandoned prison and launch the FallNation Protocol in this procedurally generated first-person roguelike shooter, with a variety of playable characters and a non-linear story."
 Date: 2024-01-08
 Draft: false
+Aliases: ["/projects/fallnation_lost_stories/"]
 
 ProjectTitle: null
 ShortenedTitle: "FN: Lost Stories"
+Ludoteca: "LDT-142866"
 Released: true
 InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2774800/dafba4ddcf18fbd1fd1a75c0042a50788768f8d8/library_600x900_2x.jpg"

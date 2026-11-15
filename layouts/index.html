@@ -6,7 +6,7 @@
 			<h2>About me</h2>
 		</li>
 		<li class="Title" style="grid-column: span 1;">
-			<h2>Next Project</h2>
+			<h2>Next Game</h2>
 		</li>
 
 		<li id="Presentation" class="Text" style="grid-column: span 2;">
@@ -17,11 +17,11 @@
 				<p style="text-align: right;">Get to know me! →</p>
 			</a>
 		</li>
-		{{ range first 1 (sort (where (where .Site.RegularPages "Params.InDevelopment" true) "Section" "projects") "Params.ReleaseDate" "asc") }}
+		{{ range first 1 (partial "games.html" (dict "pages" (where .Site.RegularPages "Section" "games") "status" "upcoming" "order" "asc")) }}
 		<li class="Game Unreleased" style="grid-column: span 1; background-image: url('{{ .Params.BannerLink }}');">
 			<a href="{{ .RelPermalink }}">
 				<h3>{{ .Title }}</h3>
-				<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>
+				<span>{{ (partialCached "game-info.html" . .RelPermalink).Year }}</span>
 				<!--<span>Started in </span><span>{{ .Date.Format "2006" }}</span>-->
 				<!--<span>— Released in </span><span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>-->
 				<!--<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" {{ partial "datatags.html" site.Data.datatags.tilt | safeHTMLAttr }}>-->
@@ -36,11 +36,11 @@
 			<h2>Latest Releases</h2>
 		</li>
 
-		{{ range first 3 (sort (where (where .Site.RegularPages "Params.Released" true) "Section" "projects") "Params.ReleaseDate" "desc") }}
+		{{ range first 3 (partial "games.html" (dict "pages" (where .Site.RegularPages "Section" "games") "status" "released" "order" "desc")) }}
 		<li class="Game Released" style="grid-column: span 1; background-image: url('{{ .Params.BannerLink }}');">
 			<a href="{{ .RelPermalink }}">
 				<h3>{{ .Title }}</h3>
-				<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>
+				<span>{{ (partialCached "game-info.html" . .RelPermalink).Year }}</span>
 				<!--<span>Started in </span><span>{{ .Date.Format "2006" }}</span>-->
 				<!--<span>— Released in </span><span>{{ .Params.ReleaseDate | time.Format "2006" }}</span>-->
 				<!--<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover" {{ partial "datatags.html" site.Data.datatags.tilt | safeHTMLAttr }}>-->
@@ -50,9 +50,9 @@
 		</li>
 		{{ end }}
 
-		<li id="MoreProjects" class="Text" style="grid-column: 2 / span 1;">
-			<a href="/projects/">
-				<p>View all projects →</p>
+		<li id="MoreGames" class="Text" style="grid-column: 2 / span 1;">
+			<a href="/games/">
+				<p>View all games →</p>
 			</a>
 		</li>
 	</ul>

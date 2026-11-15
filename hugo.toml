@@ -12,3 +12,7 @@ Title = "tabernero.dev — game developer"
 [params]
 Author = "David Tabernero M."
 
+
+
+[caches.getresource]
+maxAge = "1h" # ludoteca.dev responses (Cache-Control: max-age=3600)

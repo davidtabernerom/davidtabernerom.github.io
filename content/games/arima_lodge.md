@@ -1,11 +1,13 @@
 ---
 Title: "Arima Lodge"
-Description: "One of Arima Lodge's bellhops rides the elevator for his usual shift, but, after a man rushes into the elevator and compels him to get to the rooftop instead, he starts to realize something very serious is amiss."
+Description: "One of Arima Lodge's bellhops is about to ride the elevator up to start his shift. But as soon as a strange man rushes in and forces him to go up to the rooftop instead, he begins to realize that something is wrong."
 Date: 2022-09-19
 Draft: false
+Aliases: ["/projects/arima_lodge/"]
 
 ProjectTitle: null
 ShortenedTitle: null
+Ludoteca: "LDT-23100"
 Released: true
 InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3310190/482e4cd06875d880dc0b55fd6c463286a12ee26c/library_600x900_2x.jpg"

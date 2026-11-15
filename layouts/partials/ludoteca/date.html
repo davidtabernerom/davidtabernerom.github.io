@@ -1,0 +1,17 @@
+{{- /*
+	Parses a ludoteca.dev release date ("10 DIC 2024", Spanish month abbreviations) into a time.
+	Returns false for anything that isn't an exact day ("2.º trimestre del 2027", "Por confirmarse"...).
+*/ -}}
+{{- $result := false -}}
+{{- with . -}}
+	{{- $text := . | lower | replaceRE `\.` "" | strings.TrimSpace -}}
+	{{- if findRE `^\d{1,2} [a-z]+ \d{4}$` $text -}}
+		{{- $months := dict "ene" 1 "feb" 2 "mar" 3 "abr" 4 "may" 5 "jun" 6 "jul" 7 "ago" 8 "sep" 9 "sept" 9 "set" 9 "oct" 10 "nov" 11 "dic" 12 -}}
+		{{- $parts := split $text " " -}}
+		{{- $day := index $parts 0 -}}
+		{{- with index $months (index $parts 1) -}}
+			{{- $result = time.AsTime (printf "%s-%02d-%s" (index $parts 2) . (cond (eq (len $day) 1) (print "0" $day) $day)) -}}
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+{{- return $result -}}

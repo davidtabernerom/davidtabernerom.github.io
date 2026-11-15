@@ -1,14 +1,14 @@
 {{ define "article" }}
-<article id="Projects">
+<article id="Games">
 
-	<h2>Upcoming Projects</h2>
+	<h2>Upcoming Games</h2>
 	<ul>
-		{{ range (sort (where .Pages "Params.InDevelopment" true) "Params.ReleaseDate" "asc") }}
+		{{ range (partial "games.html" (dict "pages" .Pages "status" "upcoming" "order" "asc")) }}
 		<li>
 			<a href="{{ .RelPermalink }}">
 				<ul>
 					<li class="Datetime">
-						<span>{{ .Date.Format "2006" }}<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span></span>
+						<span>{{ .Date.Format "2006" }}<span>{{ (partialCached "game-info.html" . .RelPermalink).Year }}</span></span>
 					</li>
 					<li class="Cover">
 						<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">
@@ -26,14 +26,14 @@
 		{{ end }}
 	</ul>
 
-	<h2>Released Projects</h2>
+	<h2>Released Games</h2>
 	<ul>
-		{{ range (sort (where .Pages "Params.Released" true) "Params.ReleaseDate" "desc") }}
+		{{ range (partial "games.html" (dict "pages" .Pages "status" "released" "order" "desc")) }}
 		<li>
 			<a href="{{ .RelPermalink }}">
 				<ul>
 					<li class="Datetime">
-						<span>{{ .Date.Format "2006" }}<span>{{ .Params.ReleaseDate | time.Format "2006" }}</span></span>
+						<span>{{ .Date.Format "2006" }}<span>{{ (partialCached "game-info.html" . .RelPermalink).Year }}</span></span>
 					</li>
 					<li class="Cover">
 						<img src="{{ .Params.CoverLink }}" alt="{{ .Title }} cover">

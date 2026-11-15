@@ -1,11 +1,13 @@
 ---
 Title: "The Silent Swan"
-Description: "The Silent Swan is a contemplative first-person narrative experience across a megalithic, derelict world. Mixing elements from both walking simulator and open levels."
+Description: "The Silent Swan is a contemplative first-person narrative experience across a megalithic, derelict world. It mixes elements of walking simulators and open levels."
 Date: 2021-09-24
 Draft: false
+Aliases: ["/projects/the_silent_swan/"]
 
 ProjectTitle: "Circenses"
 ShortenedTitle: null
+Ludoteca: "LDT-24213"
 Released: true
 InDevelopment: false
 CoverLink: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1898880/library_600x900_2x.jpg"
@@ -15,7 +17,7 @@ MainDeveloper: "Praenaris"
 Developers:
   - "Praenaris"
 Publishers:
-  - "GammeraNest"
+  - "Praenaris"
 JobPosition: "Lead Programmer & Technical Manager"
 
 Links:

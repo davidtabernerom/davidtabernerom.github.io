@@ -1,0 +1,16 @@
+{{- /*
+	Filters and sorts game pages by their effective status and release date (see game-info.html).
+	Context: dict "pages" <pages> "status" ("released" | "upcoming") "order" ("asc" | "desc")
+*/ -}}
+{{- $items := slice -}}
+{{- range .pages -}}
+	{{- $info := partialCached "game-info.html" . .RelPermalink -}}
+	{{- if or (and (eq $.status "released") $info.Released) (and (eq $.status "upcoming") $info.InDevelopment) -}}
+		{{- $items = $items | append (dict "date" $info.Date.Unix "page" .) -}}
+	{{- end -}}
+{{- end -}}
+{{- $pages := slice -}}
+{{- range sort $items "date" .order -}}
+	{{- $pages = $pages | append .page -}}
+{{- end -}}
+{{- return $pages -}}

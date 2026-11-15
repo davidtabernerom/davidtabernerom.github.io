@@ -1,7 +1,8 @@
 {{ define "article" }}
-<article id="Project">
+{{ $info := partialCached "game-info.html" . .RelPermalink }}
+<article id="Game">
 
-	<h2>Project sheet</h2>
+	<h2>Game sheet</h2>
 	<ul>
 		<li class="Sheet">
 			<ul>
@@ -15,7 +16,7 @@
 				</li>
 				<li>
 					<div class="Key">Release date</div>
-					<div class="Value">{{ .Params.ReleaseDate | time.Format "2006-01-02" }}</div>
+					<div class="Value">{{ if $info.DateKnown }}{{ $info.Date.Format "2006-01-02" }}{{ else }}{{ $info.Year }}{{ end }}</div>
 				</li>
 				<li>
 					{{ $creator := index site.Data.studios .Params.MainDeveloper }}
@@ -64,13 +65,18 @@
 
 			<h2>Links</h2>
 			<ul>
-				{{ with .Params.Links }}{{ range . }}
-				{{ $store := index site.Data.stores .store }}
+				{{ range $info.Links }}
 				<li>
-					<div class="Key">{{ $store.name }}</div>
+					<div class="Key">{{ .name }}</div>
 					<a class="Value" target="_blank" href="{{ .link }}">{{ .link }}</a>
 				</li>
-				{{ end }}{{ end }}
+				{{ end }}
+				{{ with $info.LudotecaLink }}
+				<li>
+					<div class="Key">Game data</div>
+					<a class="Value" target="_blank" href="{{ . }}">ludoteca.dev (ODbL)</a>
+				</li>
+				{{ end }}
 			</ul>
 		</li>
 

@@ -1,0 +1,62 @@
+{{- /*
+	Effective data for a game page: the front matter, updated with ludoteca.dev when the page has a Ludoteca id.
+	ludoteca.dev decides the release status and date; store links from the front matter win over its links.
+	Call it as: partialCached "game-info.html" . .RelPermalink
+*/ -}}
+{{- $api := dict -}}
+{{- with .Params.Ludoteca -}}
+	{{- $api = partialCached "ludoteca/fetch.html" . . -}}
+{{- end -}}
+
+{{- $released := .Params.Released -}}
+{{- $inDevelopment := .Params.InDevelopment -}}
+{{- $date := time.AsTime .Params.ReleaseDate -}}
+{{- $year := $date.Format "2006" -}}
+{{- $dateKnown := .Params.Released -}}
+{{- with $api.lanzamiento -}}
+	{{- $released = not .proximamente -}}
+	{{- $inDevelopment = .proximamente -}}
+	{{- with partial "ludoteca/date.html" .fecha -}}
+		{{- $date = . -}}
+		{{- $year = .Format "2006" -}}
+		{{- $dateKnown = true -}}
+	{{- else -}}
+		{{- with $api.ano -}}
+			{{- $year = string . -}}
+			{{- $dateKnown = false -}}
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+
+{{- $storeKeys := dict "epic" "EpicGames" "gog" "GOG" "itch" "Itchio" "playstation" "PlayStation" "steam" "Steam" -}}
+{{- $links := slice -}}
+{{- $linkedStores := slice -}}
+{{- range .Params.Links -}}
+	{{- $name := .store -}}
+	{{- with index site.Data.stores .store -}}
+		{{- $name = .name -}}
+	{{- end -}}
+	{{- $links = $links | append (dict "name" $name "link" .link) -}}
+	{{- $linkedStores = $linkedStores | append .store -}}
+{{- end -}}
+{{- range $api.tiendas -}}
+	{{- $key := index $storeKeys .clave | default .clave -}}
+	{{- if not (in $linkedStores $key) -}}
+		{{- $name := .nombre -}}
+		{{- with index site.Data.stores $key -}}
+			{{- $name = .name -}}
+		{{- end -}}
+		{{- $links = $links | append (dict "name" $name "link" .url) -}}
+		{{- $linkedStores = $linkedStores | append $key -}}
+	{{- end -}}
+{{- end -}}
+
+{{- return dict
+	"Released" $released
+	"InDevelopment" $inDevelopment
+	"Date" $date
+	"DateKnown" $dateKnown
+	"Year" $year
+	"Links" $links
+	"LudotecaLink" ($api.url_ficha | default "")
+-}}
