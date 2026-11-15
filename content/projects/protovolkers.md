@@ -16,7 +16,7 @@ Developers:
   - "DragonResonance"
 Publishers:
   - "Praenaris"
-JobPosition: "Solo developer"
+JobPosition: "Solo Developer"
 
 Links:
   - store: "Steam"
